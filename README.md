@@ -46,6 +46,7 @@ If you find it useful, please star ⭐ this repo and [cite](#citation) the paper
 
 ## 🔥 News
 - **[2024-12-28]** This repository is newly launched to explore the synergy between **Unmanned Aerial Vehicles (UAVs)** and **Large Language Models (LLMs)**. We will continually update it with fresh papers, demos, and insights.
+- **[2023-12-27]** [Yiduo Li](https://github.com/Leeeufo02) added the content of the dataset section
 - **[2023-12-27]** [Fei Lin](https://github.com/linfei-mise) and [Yonglin Tian](https://github.com/Hub-Tian) curated this list and published the first version.
 
 > If you have any questions or suggestions, please feel free to open an [issue](https://github.com/Hub-Tian/UAVs_Meet_LLMs/issues) or contact us via email.
