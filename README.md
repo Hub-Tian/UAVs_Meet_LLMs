@@ -1,11 +1,11 @@
 <!-- 
    ================================
-   README for "UAVs_Meet_LLMs"
+   README for "UAVs Meet LLMs"
    ================================
 -->
 
 <h1 align="center">
-  🚁 UAVs_Meet_LLMs 🚀
+  🚁 UAVs Meet LLMs 🚀
 </h1>
 
 <p align="center">
@@ -13,12 +13,14 @@
   <a href="https://awesome.re" target="_blank">
     <img src="https://awesome.re/badge.svg" alt="Awesome Badge"/>
   </a>
-
+  
   <!-- 2) Maintain Status Badge -->
   <img src="https://img.shields.io/badge/Maintain-Active-8A2BE2?style=flat-square&logo=github&logoColor=white" alt="Maintain Badge"/>
 
-  <!-- 3) PR’s Welcome Badge -->
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+  <!-- 3) PR's Welcome Badge -->
+  <a href="http://makeapullrequest.com" target="_blank">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PR's Welcome"/>
+  </a>
 
   <!-- 4) Visitor Badge: replace 'YourGitHubName' with your GitHub username or org name -->
   <a href="https://github.com/Hub-Tian/UAVs_Meet_LLMs" target="_blank">
@@ -112,7 +114,7 @@ We want to thank the following contributors for creating, maintaining, and curat
 - **Yiduo Li**  
 - **Xuan Fu**
 
-If you have any questions about this opinionated list, please get in touch with **Fei Lin** 📧: [feilin@ieee.org](mailto:feilin@ieee.org).  
+If you have any questions about this opinionated list, please get in touch with **Yonglin Tian** 📧: [yonglin.tian@ia.ac.cn](mailto:yonglin.tian@ia.ac.cn) and **Fei Lin** 📧: [feilin@ieee.org](mailto:feilin@ieee.org).  
 
 *(If you would like to contribute to this repo, please open an Issue or Pull Request.)*
 
