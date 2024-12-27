@@ -17,7 +17,10 @@
   <!-- 2) Maintain Status Badge -->
   <img src="https://img.shields.io/badge/Maintain-Active-8A2BE2?style=flat-square&logo=github&logoColor=white" alt="Maintain Badge"/>
 
-  <!-- 3) Visitor Badge: replace 'YourGitHubName' with your GitHub username or org name -->
+  <!-- 3) PR’s Welcome Badge -->
+[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+
+  <!-- 4) Visitor Badge: replace 'YourGitHubName' with your GitHub username or org name -->
   <a href="https://github.com/Hub-Tian/UAVs_Meet_LLMs" target="_blank">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=YourGitHubName.UAVs_Meet_LLMs&left_color=%239146DE&right_color=%23E6C82D" alt="Visitor Badge"/>
   </a>
@@ -139,7 +142,7 @@ If you find this repository useful, please consider citing this paper:
         Yisheng Lv and 
         Fei-Yue Wang
       },
-      year={2024},
+      year={2025},
       note={Under review / In preparation},
 }
 ```
