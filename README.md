@@ -149,62 +149,137 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 ## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
 ### Environmental Perception 
 
-| **Name** | **Year** | **Types** | **Amount** |
-|----------|----------|-----------|------------|
-| AirFisheye [^1] | 2024 | Fisheye image, Depth image, Point cloud, IMU | Over 26,000 fisheye images in total. Data is collected at a rate of 10 frames per second. [Link](https://collaborating.tuhh.de/ilt/airfisheye-dataset) |
-| SynDrone [^2] | 2023 | Image, Depth image, Point cloud | Contains 72,000 annotation samples, providing 28 types of pixel-level and object-level annotations. [Link](https://github.com/LTTM/Syndrone) |
-| WildUAV [^3] | 2022 | Image, Video, Depth image, Metadata | Mapping images are provided as 24-bit PNG files, with the resolution of 5280x3956. Video images are provided as JPG files at a resolution of 3840x2160. There are 16 possible class labels detailed. [Link](https://github.com/hrflr/wuav) |
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [AirFisheye](https://collaborating.tuhh.de/ilt/airfisheye-dataset) | 2024     | Fisheye image, Depth image, Point cloud, IMU | Over 26,000 fisheye images in total. Data is collected at a rate of 10 frames per second.                   |
+| [SynDrone](https://github.com/LTTM/Syndrone)                | 2023     | Image, Depth image, Point cloud       | Contains 72,000 annotation samples, providing 28 types of pixel-level and object-level annotations.        |
+| [WildUAV](https://github.com/hrflr/wuav)                   | 2022     | Image, Video, Depth image, Metadata  | Mapping images are provided as 24-bit PNG files, with the resolution of 5280x3956. Video images are provided as JPG files at a resolution of 3840x2160. There are 16 possible class labels detailed. |
 
 ### Event Recognition
 
-| **Name** | **Year** | **Types** | **Amount** |
-|----------|----------|-----------|------------|
-| CapERA [^4] | 2023 | Video, Text | 2864 videos, each with 5 descriptions, totaling 14,320 texts. Each video lasts 5 seconds and is captured at 30 frames/second with a resolution of 640 × 640 pixels. [Link](https://github.com/yakoubbazi/CapEra) |
-| ERA [^5] | 2020 | Video | A total of 2,864 videos, including disaster events, traffic accidents, sports competitions, and other 25 categories. Each video is 24 frames/second for 5 seconds. [Link](https://lcmou.github.io/ERA_Dataset) |
-| VIRAT [^6] | 2016 | Video | 25 hours of static ground video and 4 hours of dynamic aerial video. There are 23 event types involved. [Link](https://viratdata.org/) |
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [CapERA](https://github.com/yakoubbazi/CapEra)              | 2023     | Video, Text                           | 2864 videos, each with 5 descriptions, totaling 14,320 texts. Each video lasts 5 seconds and is captured at 30 frames/second with a resolution of 640 × 640 pixels. |
+| [ERA](https://lcmou.github.io/ERA_Dataset)                 | 2020     | Video                                 | A total of 2,864 videos, including disaster events, traffic accidents, sports competitions, and other 25 categories. Each video is 24 frames/second for 5 seconds. |
+| [VIRAT](https://viratdata.org/)                            | 2016     | Video                                 | 25 hours of static ground video and 4 hours of dynamic aerial video. There are 23 event types involved.      |
 
 ### Detection
 
-| **Name** | **Year** | **Types** | **Amount** |
-|----------|----------|-----------|------------|
-| DroneRFa [^7] | 2024 | RF signal | It includes 24 types of UAV signals (9 types of outdoor acquisition and 15 types of indoor acquisition) and 1 type of background signals, covering 3 ISM frequency bands. [Link](https://data.mendeley.com/datasets/f4c2b4n755/1) |
-| IDTDSAT [^8] | 2019 | Infrared image, Trajectory | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. [Link](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) |
-| DTDAOTRES [^9] | 2019 | Radar | 15 segments of 8.76 GB. [Link](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) |
-
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [DroneRFa](https://data.mendeley.com/datasets/f4c2b4n755/1) | 2024     | RF signal                             | It includes 24 types of UAV signals (9 types of outdoor acquisition and 15 types of indoor acquisition) and 1 type of background signals, covering 3 ISM frequency bands. |
+| [IDTDSAT](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) | 2019     | Infrared image, Trajectory            | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. |
+| [DTDAOTRES](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) | 2019     | Radar                                 | 15 segments of 8.76 GB.                                                                                     |
 
 ## UAV-oriented Datasets on Object Tracking
 
-
-
-| **Name** | **Year** | **Types** | **Amount** |
-|----------|----------|-----------|------------|
-| WebUAV-3M [^10] | 2024 | Video, Text, Audio | 4,500 videos totaling more than 3.3 million frames with 223 target categories, providing natural language and audio descriptions. [Link](https://github.com/983632847/WebUAV-3M) |
-| UAVDark135 [^11] | 2022 | Video | 135 video sequences with over 125,000 manually annotated frames. [Link](https://vision4robotics.github.io/project/uavdark135/) |
-| TNL2K [^12] | 2022 | Video, Infrared video, Text | 2,000 video sequences, comprising 1,244,340 frames and 663 words. [Link](https://github.com/wangxiao5791509/TNL2K_evaluation_toolkit) |
-| VOT-ST2020/VOT-RT2020 [^13] | 2020 | Video | 1,000 sequences, each varying in length, with an average length of approximately 100 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
-| VOT-LT2020 [^14] | 2020 | Video | 50 sequences, each with a length of approximately 40,000 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
-| VOT-RGBT2020 [^15] | 2020 | Video, Infrared video | 50 sequences, each with a length of approximately 40,000 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
-| VOT-RGBD2020 [^16] | 2020 | Video, Depth image | 80 sequences with a total of approximately 101,956 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
-| GOT-10K [^17] | 2019 | Image, Video | 420 video clips belonging to 84 object categories and 31 motion categories. [Link](http://got-10k.aitestunion.com/) |
-| DTB70 [^18] | 2017 | Video | 70 video sequences, each consisting of multiple video frames, with each frame containing an RGB image at a resolution of 1280x720 pixels. [Link](https://github.com/flyers/drone-tracking) |
-| Stanford Drone [^19] | 2016 | Video | 19,000+ target tracks, containing 6 types of targets, about 20,000 target interactions, 40,000 target interactions with the environment, covering 100+ scenes in the university campus. [Link](https://cvgl.stanford.edu/projects/uav_data/) |
-| COWC [^20] | 2016 | Image | 32,716 unique vehicles and 58,247 non-vehicle targets were labeled. Covering 6 different geographical areas. [Link](https://gdo152.llnl.gov/cowc/) |
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [WebUAV-3M](https://github.com/983632847/WebUAV-3M)         | 2024     | Video, Text, Audio                    | 4,500 videos totaling more than 3.3 million frames with 223 target categories, providing natural language and audio descriptions. |
+| [UAVDark135](https://vision4robotics.github.io/project/uavdark135/) | 2022     | Video                                 | 135 video sequences with over 125,000 manually annotated frames.                                              |
+| [TNL2K](https://github.com/wangxiao5791509/TNL2K_evaluation_toolkit) | 2022     | Video, Infrared video, Text           | 2,000 video sequences, comprising 1,244,340 frames and 663 words.                                           |
+| [VOT-ST2020/VOT-RT2020](https://votchallenge.net/vot2020/dataset.html) | 2020     | Video                                 | 1,000 sequences, each varying in length, with an average length of approximately 100 frames.               |
+| [VOT-LT2020](https://votchallenge.net/vot2020/dataset.html) | 2020     | Video                                 | 50 sequences, each with a length of approximately 40,000 frames.                                            |
+| [VOT-RGBT2020](https://votchallenge.net/vot2020/dataset.html) | 2020     | Video, Infrared video                 | 50 sequences, each with a length of approximately 40,000 frames.                                            |
+| [VOT-RGBD2020](https://votchallenge.net/vot2020/dataset.html) | 2020     | Video, Depth image                    | 80 sequences with a total of approximately 101,956 frames.                                                 |
+| [GOT-10K](http://got-10k.aitestunion.com/)                 | 2019     | Image, Video                          | 420 video clips belonging to 84 object categories and 31 motion categories.                                 |
+| [DTB70](https://github.com/flyers/drone-tracking)           | 2017     | Video                                 | 70 video sequences, each consisting of multiple video frames, with each frame containing an RGB image at a resolution of 1280x720 pixels. |
+| [Stanford Drone](https://cvgl.stanford.edu/projects/uav_data/) | 2016     | Video                                 | 19,000+ target tracks, containing 6 types of targets, about 20,000 target interactions, 40,000 target interactions with the environment, covering 100+ scenes in the university campus. |
+| [COWC](https://gdo152.llnl.gov/cowc/)                      | 2016     | Image                                 | 32,716 unique vehicles and 58,247 non-vehicle targets were labeled. Covering 6 different geographical areas. |
 
 ---
+
 ## UAV-oriented Datasets on Action Recognition
-*(Coming soon.)*
+
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [Aeriform in-action](https://surbhi-31.github.io/Aeriform-in-action/) | 2023     | Video                                 | 32 videos, 13 types of action, 55,477 frames, 40,000 callouts.                                           |
+| [MEVA](https://mevadata.org/)                               | 2021     | Video, Infrared video, GPS, Point cloud | Total 9,300 hours of video, 144 hours of activity notes, 37 activity types, over 2.7 million GPS track points. |
+| [UAV-Human](https://github.com/SUTDCV/UAV-Human)            | 2021     | Video, Night-vision video, Fisheye video, Depth video, Infrared video, Skeleton | 67,428 videos (155 types of actions, 119 subjects), 22,476 frames of annotated key points (17 key points), 41,290 frames of people re-recognition (1,144 identities), 22,263 frames of attribute recognition (such as gender, hat, backpack, etc.). |
+| [MOD20](https://asankagp.github.io/mod20/)                  | 2020     | Video                                 | 20 types of action, 2,324 videos, 503,086 frames.                                                         |
+| [NEC-DRONE](https://www.nec-labs.com/research/media-analytics/projects/unsupervised-semi-supervised-domain-adaptation-for-action-recognition-from-drones/) | 2020     | Video                                 | 5,250 videos containing 256 minutes of action videos involving 19 actors and 16 action categories.         |
+| [Drone-Action](https://asankagp.github.io/droneaction/)      | 2019     | Video                                 | 240 HD videos, 66,919 frames, 13 types of action.                                                          |
+| [UAV-GESTURE](https://asankagp.github.io/uavgesture/)        | 2019     | Video                                 | 119 videos, 37,151 frames, 13 types of gestures, 10 actors.                                                |
 
 ## UAV-oriented Datasets on Navigation and Localization
-*(Coming soon.)*
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [CityNav](https://water-cookie.github.io/city-nav-proj/)    | 2024     | Image, Text                           | 32,000 natural language descriptions and companion tracks.                                                   |
+| [CNER-UAV](https://github.com/zhhvvv/CNER-UAV)              | 2024     | Text                                  | 12,000 labeled samples containing 5 types of address labels (e.g., building, unit, floor, room, etc.).       |
+| [AerialVLN](https://github.com/AirVLN/AirVLN)                | 2023     | Simulator path, Text                  | 25 city-level scenes, 8,446 paths, 3 natural language descriptions per path, totaling 25,338 instructions.   |
+| [DenseUAV](https://github.com/Dmmm1997/DenseUAV)            | 2023     | Image                                 | Training: 6,768 UAV images, 13,536 satellite images. Test: 2,331 UAV query images, 4,662 satellite images.    |
+| [map2seq](https://map2seq.schumann.pub/dataset/download/)    | 2022     | Image, Text, Map path                 | 29,641 panoramic images, 7,672 navigation instruction texts.                                                |
+| [VIGOR](https://github.com/Jeff-Zilence/VIGOR)              | 2021     | Image                                 | 90,618 aerial images, 238,696 street panorama images.                                                       |
+| [University-1652](https://github.com/layumi/University1652-Baseline) | 2020     | Image                                 | 1,652 university buildings, 72 universities, 50,218 training images, 37,855 UAV query images, 701 satellite query images, and 21,099 ordinary & 5,580 street view images. |
+
 
 ## UAV-oriented Datasets on Transportation
-*(Coming soon.)*
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [VisDrone](http://aiskyeye.com/home/)                       | 2022     | Video, Image                          | 263 videos, 179,264 frames. 10,209 still images. More than 2,500,000 object instance annotations. The data covers 14 different cities, covering a wide range of weather and light conditions. |
+| [ITCVD](https://research.utwente.nl/en/datasets/itcvd-dataset) | 2020     | Image                                 | A total of 173 aerial images were collected, including 135 in the training set with 23,543 vehicles and 38 in the test set with 5,545 vehicles. There is 60% regional overlap between the images, and there is no overlap between the training set and the test set. |
+| [UAVid](https://uavid.nl/)                                  | 2020     | Image, Video                          | 30 videos, 300 images, 8 semantic category annotations.                                                     |
+| [AU-AIR](https://bozcani.github.io/auairdataset)            | 2020     | Video, GPS, Altitude, IMU, Speed      | 32,823 frames of video, 1920x1080 resolution, 30 FPS, divided into 30,000 training validation samples and 2,823 test samples. The total duration of the 8 videos is about 2 hours, with a total of 132,034 instances, distributed in 8 categories. |
+| [iSAID](https://captain-whu.github.io/iSAID/)               | 2020     | Image                                 | Total images: 2,806. Total number of instances: 655,451. Test set: 935 images (not publicly labeled, used to evaluate the server). |
+| [CARPK](https://lafi.github.io/LPN/)                        | 2018     | Image                                 | 1448 images, approx. 89,777 vehicles, providing box annotations.                                           |
+| [highD](https://levelxdata.com/highd-dataset/)              | 2018     | Video, Trajectory                     | 16.5 hours, 110,000 vehicles, 5,600 lane changes, 45,000 km, totaling approximately 447 hours of vehicle travel data; 4 predefined driving behavior labels. |
+| [UAVDT](https://sites.google.com/view/grli-uavdt/)           | 2018     | Video, Weather, Altitude, Camera angle | 100 videos, about 80,000 frames, 30 frames per second, containing 841,500 target boxes, covering 2,700 targets. |
+| [CADP](https://ankitshah009.github.io/accident_forecasting_traffic_camera) | 2016     | Video                                 | A total of 5.24 hours, 1,416 traffic accident clips, 205 full-time and space annotation videos. |
+| [VEDAI](https://downloads.greyc.fr/vedai)                   | 2016     | Image                                 | 1,210 images (1024 × 1024 and 512 × 512 pixels), 9 types of vehicles, containing about 6,650 targets in total. |
+
 
 ## UAV-oriented Datasets on Remote Sensing
-*(Coming soon.)*
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [RET-3](https://github.com/ChenDelong1999/RemoteCLIP?utm_source=chatgpt.com) | 2024     | Image, Text                           | Approximately 13,000 samples. Including RSICD, RSITMD and UCM.                                             |
+| [DET-10](https://github.com/ChenDelong1999/RemoteCLIP?utm_source=chatgpt.com) | 2024     | Image                                 | In the object detection dataset, the number of objects per image ranges from 1 to 70, totaling about 80,000 samples. |
+| [SEG-4](https://github.com/ChenDelong1999/RemoteCLIP?utm_source=chatgpt.com)  | 2024     | Image                                 | The segmented data set covers different regions and resolutions, totaling about 72,000 samples.             |
+| [DIOR](http://www.escience.cn/people/gongcheng/DIOR.html)   | 2020     | Image                                 | 23,463 images, containing 192,472 target instances, covering 20 categories, including aircraft, vehicles, ships, bridges, etc., each category contains about 1,200 instances. |
+| [TGRS-HRRSD](https://github.com/CrazyStoneonRoad/TGRS-HRRSD-Dataset) | 2019     | Image                                 | Total images: 21,761. 13 categories, including aircraft, vehicles, bridges, etc. The total number of targets is approximately 53,000 targets. |
+| [xView](https://xviewdataset.org/)                          | 2018     | Image                                 | There are more than 1 million goals and 60 categories, including vehicles, buildings, facilities, boats and so on, which are divided into seven parent categories and several sub-categories. |
+| [DOTA](https://captain-whu.github.io/DOTA/)                 | 2018     | Image                                 | 2806 images, 188, 282 targets, 15 categories.                                                              |
+| [RSICD](https://github.com/201528014227051/RSICD_optimal)  | 2018     | Image, Text                           | 10,921 images, 54,605 descriptive sentences.                                                                |
+| [HRSC2016](http://www.escience.cn/people/liuzikun/DataSet.html) | 2017     | Image                                 | 3,433 instances, totaling 1,061 images, including 70 pure ocean images and 991 images containing mixed land-sea areas. 2,876 marked vessel targets. 610 unlabeled images. |
+| [RSOD](https://github.com/RSIA-LIESMARS-WHU/RSOD-Dataset-)  | 2017     | Image                                 | Contains 4 types of targets (tank, aircraft, overpass, playground) with 12,000 positive samples and 48,000 negative samples. |
+| [NWPU-RESISC45](http://pan.baidu.com/s/1mifR6tU)           | 2017     | Image                                 | A total of 31,500 images, covering 45 scene categories, 700 images per category, resolution 256 × 256 pixels, spatial resolution from 0.2m to 30m. |
+| [NWPU VHR-10](https://github.com/Gaoshuaikun/NWPU-VHR-10)   | 2014     | Image                                 | 800 high-resolution images, of which 650 contain targets and 150 are background images, covering 10 categories (such as aircraft, ships, bridges, etc.), totaling more than 3,000 targets. |
+
 
 ## UAV-oriented Datasets on Agriculture & Industry & Emergency Response & Military & Wildlife
-*(Coming soon.)*
+### Agriculture
+| **Name**                                                   | **Year** | **Types**                              | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [WEED-2C](https://github.com/EvertonTetila/WEED2C-Dataset/?tab=readme-ov-file) | 2024     | Image                                  | Contains 4,129 labeled samples covering 2 weed species.                                                     |
+| [CoFly-WeedDB](https://github.com/CoFly-Project/CoFly-WeedDB/blob/main/README.md?utm_source=chatgpt.com) | 2023     | Image, Health data                     | Consisting of 201 aerial images, different weed types of 3 disturbed row crops (cotton) and their corresponding annotated images. |
+| [Avo-AirDB](https://github.com/LCSkhalid/Avo-AirDB)        | 2022     | Image                                  | 984 high-resolution RGB images (5472 × 3648 pixels), 93 of which have detailed polygonal annotations, divided into 3 to 4 categories (small, medium, large, and background). |
+
+### Industry
+
+| **Name**                                                   | **Year** | **Types**                              | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [UAPD](https://github.com/tantantetetao/UAPD-Pavement-Distress-Dataset) | 2021     | Image                                  | There are 2,401 crack images in the original data and 4,479 crack images after data enhancement.            |
+| [InsPLAD](https://github.com/andreluizbvs/InsPLAD/)         | 2023     | Image                                  | 10,607 UAV images containing 17 classes of power assets with a total of 28,933 labeled instances, and defect labels for 5 assets with a total of 402 defect samples classified into 6 defect types. |
+
+### Emergency Response
+
+| **Name**                                                   | **Year** | **Types**                              | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [FloodNet](https://github.com/BinaLab/FloodNet-Supervised_v1.0) | 2021     | Image, Text                            | The whole dataset has 2,343 images, divided into training (~60%), validation (~20%), and test (~20\%) sets. The semantic segmentation labels include: Background, Building Flooded, Building Non-Flooded, Road Flooded, Road Non-Flooded, Water, Tree, Vehicle, Pool, Grass. |
+| [AFID](https://purr.purdue.edu/publications/4105/1)         | 2023     | Image                                  | A total of 816 images with resolutions of 2720 × 1536 and 2560 × 1440. Contains 8 semantic segmentation categories. |
+| [Aerial SAR](https://www.leadingindia.ai/data-set)          | 2020     | Image                                  | 2,000 images with 30,000 action instances covering multiple human behaviors.                               |
+
+### Military
+
+| **Name**                                                   | **Year** | **Types**                              | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [MOCO](https://github.com/Panlizhi/MOCO)                   | 2024     | Image, Text                            | 7,449 images, 37,245 captions.                                                                             |
+
+### Wildlife
+
+| **Name**                                                   | **Year** | **Types**                              | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [WAID](https://github.com/xiaohuicui/WAID)                 | 2023     | Image                                  | 14,375 UAV images covering 6 species of wildlife and multiple environment types.                           |
+
 
 ---
 
