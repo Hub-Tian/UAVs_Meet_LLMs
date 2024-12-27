@@ -39,7 +39,7 @@ If you find it useful, please star ⭐ this repo and [cite](#citation) the paper
 
 ---
 
-## 🔥🔥🔥 News
+## 🔥 News
 - **[2024-12-28]** This repository is newly launched to explore the synergy between **Unmanned Aerial Vehicles (UAVs)** and **Large Language Models (LLMs)**. We will continually update it with fresh papers, demos, and insights.
 - **[2023-12-27]** [Fei Lin](https://github.com/linfei-mise) and [Yonglin Tian](https://github.com/Hub-Tian) curated this list and published the first version.
 
@@ -142,7 +142,8 @@ If you find this repository useful, please consider citing this paper:
       year={2024},
       note={Under review / In preparation},
 }
-
+```
+ 
 ---
 
 ## License
