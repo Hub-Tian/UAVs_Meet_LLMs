@@ -22,3 +22,5 @@
 
 ## Introduction
 This repository explores the synergy between **Unmanned Aerial Vehicles (UAVs)** and **Large Language Models (LLMs)**. We dive into how drones can harness the power of generative AI and advanced language understanding to enable new applications, research directions, and real-world deployments.
+
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=-6R9uf1k09TTGITM7MERMquBbJJElHY2M01jI6-FX1w"></script>
