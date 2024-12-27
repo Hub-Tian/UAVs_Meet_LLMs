@@ -147,24 +147,50 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 *(Coming soon: table showcasing the summary of various methods and models.)*
 
 ## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
-*(Coming soon: detailed table and references.)*
+### Environmental Perception 
+
+| **Name** | **Year** | **Types** | **Amount** |
+|----------|----------|-----------|------------|
+| AirFisheye [^1] | 2024 | Fisheye image, Depth image, Point cloud, IMU | Over 26,000 fisheye images in total. Data is collected at a rate of 10 frames per second. [Link](https://collaborating.tuhh.de/ilt/airfisheye-dataset) |
+| SynDrone [^2] | 2023 | Image, Depth image, Point cloud | Contains 72,000 annotation samples, providing 28 types of pixel-level and object-level annotations. [Link](https://github.com/LTTM/Syndrone) |
+| WildUAV [^3] | 2022 | Image, Video, Depth image, Metadata | Mapping images are provided as 24-bit PNG files, with the resolution of 5280x3956. Video images are provided as JPG files at a resolution of 3840x2160. There are 16 possible class labels detailed. [Link](https://github.com/hrflr/wuav) |
+
+### Event Recognition
+
+| **Name** | **Year** | **Types** | **Amount** |
+|----------|----------|-----------|------------|
+| CapERA [^4] | 2023 | Video, Text | 2864 videos, each with 5 descriptions, totaling 14,320 texts. Each video lasts 5 seconds and is captured at 30 frames/second with a resolution of 640 × 640 pixels. [Link](https://github.com/yakoubbazi/CapEra) |
+| ERA [^5] | 2020 | Video | A total of 2,864 videos, including disaster events, traffic accidents, sports competitions, and other 25 categories. Each video is 24 frames/second for 5 seconds. [Link](https://lcmou.github.io/ERA_Dataset) |
+| VIRAT [^6] | 2016 | Video | 25 hours of static ground video and 4 hours of dynamic aerial video. There are 23 event types involved. [Link](https://viratdata.org/) |
+
+### Detection
+
+| **Name** | **Year** | **Types** | **Amount** |
+|----------|----------|-----------|------------|
+| DroneRFa [^7] | 2024 | RF signal | It includes 24 types of UAV signals (9 types of outdoor acquisition and 15 types of indoor acquisition) and 1 type of background signals, covering 3 ISM frequency bands. [Link](https://data.mendeley.com/datasets/f4c2b4n755/1) |
+| IDTDSAT [^8] | 2019 | Infrared image, Trajectory | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. [Link](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) |
+| DTDAOTRES [^9] | 2019 | Radar | 15 segments of 8.76 GB. [Link](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) |
+
 
 ## UAV-oriented Datasets on Object Tracking
-### UAV-oriented Datasets on Environmental Perception & Event Recognition
-
-| **Name**       | **Year** | **Types**                                      | **Amount**                                                                                                                                                        |
-|----------------|----------|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AirFisheye [2024](https://collaborating.tuhh.de/ilt/airfisheye-dataset) | 2024     | Fisheye image, Depth image, Point cloud, IMU     | Over 26,000 fisheye images in total. Data is collected at a rate of 10 frames per second.                                                                 |
-| SynDrone [2023](https://github.com/LTTM/Syndrone) | 2023     | Image, Depth image, Point cloud                  | Contains 72,000 annotation samples, providing 28 types of pixel-level and object-level annotations.                                                            |
-| WildUAV [2022](https://github.com/hrflr/wuav)  | 2022     | Image, Video, Depth image, Metadata              | Mapping images are provided as 24-bit PNG files, with the resolution of 5280x3956. Video images are provided as JPG files at a resolution of 3840x2160.        |
-| CapERA [2023](https://github.com/yakoubbazi/CapEra) | 2023     | Video, Text                                     | 2864 videos, each with 5 descriptions, totaling 14,320 Texts. Each video lasts 5 seconds and is captured at 30 frames/second with a resolution of 640 × 640 pixels. |
-| ERA [2020](https://lcmou.github.io/ERA_Dataset) | 2020     | Video                                           | A total of 2,864 videos, including disaster events, traffic accidents, sports competitions, and other 25 categories. Each video is 24 frames/second for 5 seconds. |
-| VIRAT [2016](https://viratdata.org/) | 2016     | Video                                           | 25 hours of static ground video and 4 hours of dynamic aerial video. There are 23 event types involved.                                                      |
-| DroneRFa [2024](https://data.mendeley.com/datasets/f4c2b4n755/1) | 2024     | RF signal                                       | It includes 24 types of UAV signals (9 types of outdoor acquisition and 15 types of indoor acquisition) and 1 type of background signals, covering 3 ISM frequency bands. |
-| IDTDSAT [2019](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) | 2019     | Infrared image, Trajectory                      | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. |
-| DTDAOTRES [2019](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) | 2019     | Radar                                           | 15 segments of 8.76 GB.                                                                                                                                         |
 
 
+
+| **Name** | **Year** | **Types** | **Amount** |
+|----------|----------|-----------|------------|
+| WebUAV-3M [^10] | 2024 | Video, Text, Audio | 4,500 videos totaling more than 3.3 million frames with 223 target categories, providing natural language and audio descriptions. [Link](https://github.com/983632847/WebUAV-3M) |
+| UAVDark135 [^11] | 2022 | Video | 135 video sequences with over 125,000 manually annotated frames. [Link](https://vision4robotics.github.io/project/uavdark135/) |
+| TNL2K [^12] | 2022 | Video, Infrared video, Text | 2,000 video sequences, comprising 1,244,340 frames and 663 words. [Link](https://github.com/wangxiao5791509/TNL2K_evaluation_toolkit) |
+| VOT-ST2020/VOT-RT2020 [^13] | 2020 | Video | 1,000 sequences, each varying in length, with an average length of approximately 100 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
+| VOT-LT2020 [^14] | 2020 | Video | 50 sequences, each with a length of approximately 40,000 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
+| VOT-RGBT2020 [^15] | 2020 | Video, Infrared video | 50 sequences, each with a length of approximately 40,000 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
+| VOT-RGBD2020 [^16] | 2020 | Video, Depth image | 80 sequences with a total of approximately 101,956 frames. [Link](https://votchallenge.net/vot2020/dataset.html) |
+| GOT-10K [^17] | 2019 | Image, Video | 420 video clips belonging to 84 object categories and 31 motion categories. [Link](http://got-10k.aitestunion.com/) |
+| DTB70 [^18] | 2017 | Video | 70 video sequences, each consisting of multiple video frames, with each frame containing an RGB image at a resolution of 1280x720 pixels. [Link](https://github.com/flyers/drone-tracking) |
+| Stanford Drone [^19] | 2016 | Video | 19,000+ target tracks, containing 6 types of targets, about 20,000 target interactions, 40,000 target interactions with the environment, covering 100+ scenes in the university campus. [Link](https://cvgl.stanford.edu/projects/uav_data/) |
+| COWC [^20] | 2016 | Image | 32,716 unique vehicles and 58,247 non-vehicle targets were labeled. Covering 6 different geographical areas. [Link](https://gdo152.llnl.gov/cowc/) |
+
+---
 ## UAV-oriented Datasets on Action Recognition
 *(Coming soon.)*
 
