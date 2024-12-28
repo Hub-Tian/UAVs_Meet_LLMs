@@ -66,86 +66,188 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 ---
 
 ## Table of Contents
+
 - [Summarization of LLMs, VLMs, and VFMs](#summarization-of-llms-vlms-and-vfms)
+  - [LLMs](#llms)
+  - [VLMs](#vlms)
+  - [VFMs](#vfms)
 - [Summary of Methods and Models](#summary-of-methods-and-models)
+  - [Visual Perception](#visual-perception)
+  - [Flight Control](#flight-control)
+  - [Planning](#planning)
+  - [VLN](#vln)
+  - [Infrastructures](#infrastructures)
 - [UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection](#uav-oriented-datasets-on-environmental-perception--event-recognition--detection)
+  - [Environmental Perception](#environmental-perception)
+  - [Event Recognition](#event-recognition)
+  - [Detection](#detection)
 - [UAV-oriented Datasets on Object Tracking](#uav-oriented-datasets-on-object-tracking)
 - [UAV-oriented Datasets on Action Recognition](#uav-oriented-datasets-on-action-recognition)
 - [UAV-oriented Datasets on Navigation and Localization](#uav-oriented-datasets-on-navigation-and-localization)
 - [UAV-oriented Datasets on Transportation](#uav-oriented-datasets-on-transportation)
 - [UAV-oriented Datasets on Remote Sensing](#uav-oriented-datasets-on-remote-sensing)
 - [UAV-oriented Datasets on Agriculture & Industry & Emergency Response & Military & Wildlife](#uav-oriented-datasets-on-agriculture--industry--emergency-response--military--wildlife)
+  - [Agriculture](#agriculture)
+  - [Industry](#industry)
+  - [Emergency Response](#emergency-response)
+  - [Military](#military)
+  - [Wildlife](#wildlife)
 
 ---
 
 ## Summarization of LLMs, VLMs, and VFMs
 
-| **Category** | **Subcategory**         | **Model Name**                                                 | **Institution / Author**                                                                              |
-|:------------:|:-----------------------:|:--------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------:|
-| **LLMs**     | **General**            | GPT-3, GPT-3.5, GPT-4                                          | [OpenAI](https://openai.com)                                                                          |
-|              |                         | Claude 2, Claude 3                                             | [Anthropic](https://www.anthropic.com)                                                                |
-|              |                         | Mistral series                                                 | [Mistral AI](https://www.mistral.ai)                                                                  |
-|              |                         | PaLM series, Gemini series                                     | [Google Research](https://ai.google)                                                                  |
-|              |                         | LLaMA, LLaMA2, LLaMA3                                          | [Meta AI](https://ai.meta.com)                                                                        |
-|              |                         | Vicuna                                                         | [Vicuna Team](https://vicuna.lmsys.org)                                                               |
-|              |                         | Qwen series                                                    | [Qwen Team, Alibaba Group](https://github.com/QwenLM)                                                 |
-|              |                         | InternLM                                                       | [Shanghai AI Laboratory](https://github.com/InternLM/InternLM)                                        |
-|              |                         | BuboGPT                                                        | [Bytedance](https://github.com/magic-research/bubogpt)                                                |
-|              |                         | ChatGLM                                                        | [Zhipu AI](https://github.com/THUDM)                                                                  |
-|              |                         | DeepSeek series                                               | [DeepSeek](https://github.com/deepseek-ai)                                                            |
-| **VLMs**     | **General**            | GPT-4V, GPT-4o, GPT-4o mini, GPT o1-preview                    | [OpenAI](https://openai.com)                                                                          |
-|              |                         | Claude 3 Opus, Claude 3.5 Sonnet                               | [Anthropic](https://www.anthropic.com)                                                                |
-|              |                         | Step-2                                                         | [Jieyue Xingchen](https://www.stepfun.com/)                                                           |
-|              |                         | LLaVA, LLaVA-1.5, LLaVA-NeXT                                   | [Liu et al.](https://github.com/haotian-liu/LLaVA)                                                    |
-|              |                         | MoE-LLaVA                                                      | [Lin et al.](https://github.com/PKU-YuanGroup/MoE-LLaVA)                                              |
-|              |                         | LLaVA-CoT                                                      | [Xu et al.](https://github.com/PKU-YuanGroup/LLaVA-CoT)                                               |
-|              |                         | Flamingo                                                       | [Alayrac et al.](https://github.com/mlfoundations/open_flamingo)                                      |
-|              |                         | BLIP                                                           | [Li et al.](https://github.com/salesforce/BLIP)                                                       |
-|              |                         | BLIP-2                                                         | [Li et al.](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)                             |
-|              |                         | InstructBLIP                                                   | [Dai et al.](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip)                     |
-|              | **Video Understanding** | LLaMA-VID                                                     | [Li et al.](https://github.com/dvlab-research/LLaMA-VID)                                              |
-|              |                         | IG-VLM                                                         | [Kim et al.](https://github.com/imagegridworth/IG-VLM)                                                |
-|              |                         | Video-ChatGPT                                                  | [Maaz et al.](https://github.com/mbzuai-oryx/Video-ChatGPT)                                           |
-|              |                         | VideoTree                                                      | [Wang et al.](https://github.com/Ziyang412/VideoTree)                                                 |
-|              | **Visual Reasoning**    | X-VLM                                                          | [Zeng et al.](https://github.com/zengyan-97/X-VLM)                                                    |
-|              |                         | Chameleon                                                      | [Lu et al.](https://chameleon-llm.github.io/)                                                         |
-|              |                         | HYDRA                                                          | [Ke et al.](https://hydra-vl4ai.github.io/)                                                           |
-|              |                         | VISPROG                                                        | [PRIOR @ Allen Institute for AI](https://prior.allenai.org/projects/visprog)                          |
-| **VFMs**     | **General**            | CLIP                                                           | [OpenAI](https://github.com/OpenAI/CLIP)                                                              |
-|              |                         | FILIP                                                          | Yao et al.                                                                                             |
-|              |                         | RegionCLIP                                                     | [Microsoft Research](https://github.com/microsoft/RegionCLIP)                                         |
-|              |                         | EVA-CLIP                                                       | [Sun et al.](https://github.com/baaivision/EVA/tree/master/EVA-CLIP)                                  |
-|              | **Object Detection**    | GLIP                                                           | [Microsoft Research](https://github.com/microsoft/GLIP)                                               |
-|              |                         | DINO                                                           | Zhang et al.                                                                                           |
-|              |                         | Grounding-DINO                                                 | [Liu et al.](https://github.com/IDEA-Research/GroundingDINO)                                          |
-|              |                         | DINOv2                                                         | [Meta AI Research](https://github.com/facebookresearch/dinov2)                                        |
-|              |                         | AM-RADIO                                                       | [NVIDIA](https://github.com/NVlabs/RADIO)                                                             |
-|              |                         | DINO-WM                                                        | Zhou et al.                                                                                            |
-|              |                         | YOLO-World                                                     | [Cheng et al.](https://github.com/AILabCVC/YOLO-World)                                                |
-|              | **Image Segmentation**  | CLIPSeg                                                        | [Lüdecke and Ecker](https://github.com/timojl/clipseg)                                                |
-|              |                         | SAM                                                            | [Meta AI Research, FAIR](https://segment-anything.com)                                                |
-|              |                         | Embodied-SAM                                                   | [Xu et al.](https://github.com/xuxw98/ESAM)                                                           |
-|              |                         | Point-SAM                                                      | [Zhou et al.](https://github.com/zyc00/Point-SAM)                                                     |
-|              |                         | Open-Vocabulary SAM                                            | [Yuan et al.](https://www.mmlab-ntu.com/project/ovsam/)                                               |
-|              |                         | TAP                                                            | [Pan et al.](https://github.com/baaivision/tokenize-anything)                                         |
-|              |                         | EfficientSAM                                                   | [Xiong et al.](https://yformer.github.io/efficient-sam/)                                             |
-|              |                         | MobileSAM                                                      | [Zhang et al.](https://github.com/ChaoningZhang/MobileSAM)                                            |
-|              |                         | SAM 2                                                          | [Meta AI Research, FAIR](https://ai.meta.com/sam2/)                                                   |
-|              |                         | SAMURAI                                                        | [University of Washington](https://github.com/yangchris11/samurai)                                    |
-|              |                         | SegGPT                                                         | [Wang et al.](https://github.com/baaivision/Painter)                                                  |
-|              |                         | Osprey                                                         | [Yuan et al.](https://github.com/CircleRadon/Osprey)                                                  |
-|              |                         | SEEM                                                           | Zou et al.                                                                                             |
-|              |                         | Seal                                                           | [Liu et al.](https://github.com/youquanl/Segment-Any-Point-Cloud)                                     |
-|              |                         | LISA                                                           | [Lai et al.](https://github.com/dvlabresearch/LISA)                                                   |
-|              | **Depth Estimation**    | ZoeDepth                                                       | [Bhat et al.](https://github.com/isl-org/ZoeDepth)                                                    |
-|              |                         | ScaleDepth                                                     | [Zhu et al.](https://ruijiezhu94.github.io/ScaleDepth/)                                               |
-|              |                         | Depth Anything                                                 | [Yang et al.](https://depth-anything.github.io)                                                       |
-|              |                         | Depth Anything V2                                              | [Yang et al.](https://depth-anything-v2.github.io/)                                                   |
-|              |                         | Depth Pro                                                      | [Apple](https://github.com/apple/ml-depth-pro)                                                        |
+### LLMs
 
+| **Subcategory** | **Model Name**                            | **Institution / Author**                                         |
+|:--------------: |:-----------------------------------------: |:----------------------------------------------------------------:|
+| **General**     | GPT-3, GPT-3.5, GPT-4                     | [OpenAI](https://openai.com)                                     |
+|                | Claude 2, Claude 3                         | [Anthropic](https://www.anthropic.com)                           |
+|                | Mistral series                             | [Mistral AI](https://www.mistral.ai)                             |
+|                | PaLM series, Gemini series                 | [Google Research](https://ai.google)                             |
+|                | LLaMA, LLaMA2, LLaMA3                      | [Meta AI](https://ai.meta.com)                                   |
+|                | Vicuna                                     | [Vicuna Team](https://vicuna.lmsys.org)                          |
+|                | Qwen series                                | [Qwen Team, Alibaba Group](https://github.com/QwenLM)            |
+|                | InternLM                                   | [Shanghai AI Laboratory](https://github.com/InternLM/InternLM)   |
+|                | BuboGPT                                    | [Bytedance](https://github.com/magic-research/bubogpt)           |
+|                | ChatGLM                                    | [Zhipu AI](https://github.com/THUDM)                             |
+|                | DeepSeek series                            | [DeepSeek](https://github.com/deepseek-ai)                       |
+
+### VLMs
+
+| **Subcategory**       | **Model Name**                                           | **Institution / Author**                                                                   |
+|:---------------------:|:--------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+| **General**           | GPT-4V, GPT-4o, GPT-4o mini, GPT o1-preview              | [OpenAI](https://openai.com)                                                               |
+|                       | Claude 3 Opus, Claude 3.5 Sonnet                         | [Anthropic](https://www.anthropic.com)                                                     |
+|                       | Step-2                                                  | [Jieyue Xingchen](https://www.stepfun.com/)                                                |
+|                       | LLaVA, LLaVA-1.5, LLaVA-NeXT                             | [Liu et al.](https://github.com/haotian-liu/LLaVA)                                         |
+|                       | MoE-LLaVA                                               | [Lin et al.](https://github.com/PKU-YuanGroup/MoE-LLaVA)                                   |
+|                       | LLaVA-CoT                                               | [Xu et al.](https://github.com/PKU-YuanGroup/LLaVA-CoT)                                    |
+|                       | Flamingo                                               | [Alayrac et al.](https://github.com/mlfoundations/open_flamingo)                           |
+|                       | BLIP                                                   | [Li et al.](https://github.com/salesforce/BLIP)                                            |
+|                       | BLIP-2                                                 | [Li et al.](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)                  |
+|                       | InstructBLIP                                           | [Dai et al.](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip)          |
+| **Video Understanding** | LLaMA-VID                                             | [Li et al.](https://github.com/dvlab-research/LLaMA-VID)                                   |
+|                       | IG-VLM                                                 | [Kim et al.](https://github.com/imagegridworth/IG-VLM)                                     |
+|                       | Video-ChatGPT                                          | [Maaz et al.](https://github.com/mbzuai-oryx/Video-ChatGPT)                                |
+|                       | VideoTree                                             | [Wang et al.](https://github.com/Ziyang412/VideoTree)                                      |
+| **Visual Reasoning**  | X-VLM                                                 | [Zeng et al.](https://github.com/zengyan-97/X-VLM)                                         |
+|                       | Chameleon                                             | [Lu et al.](https://chameleon-llm.github.io/)                                              |
+|                       | HYDRA                                                 | [Ke et al.](https://hydra-vl4ai.github.io/)                                                |
+|                       | VISPROG                                               | [PRIOR @ Allen Institute for AI](https://prior.allenai.org/projects/visprog)               |
+
+### VFMs
+
+| **Subcategory**       | **Model Name**                        | **Institution / Author**                                                 |
+|:---------------------:|:-------------------------------------:|:-------------------------------------------------------------------------:|
+| **General**           | CLIP                                  | [OpenAI](https://github.com/OpenAI/CLIP)                                |
+|                       | FILIP                                 | Yao et al.                                                               |
+|                       | RegionCLIP                            | [Microsoft Research](https://github.com/microsoft/RegionCLIP)           |
+|                       | EVA-CLIP                              | [Sun et al.](https://github.com/baaivision/EVA/tree/master/EVA-CLIP)    |
+| **Object Detection**  | GLIP                                  | [Microsoft Research](https://github.com/microsoft/GLIP)                 |
+|                       | DINO                                  | Zhang et al.                                                             |
+|                       | Grounding-DINO                        | [Liu et al.](https://github.com/IDEA-Research/GroundingDINO)            |
+|                       | DINOv2                                | [Meta AI Research](https://github.com/facebookresearch/dinov2)          |
+|                       | AM-RADIO                              | [NVIDIA](https://github.com/NVlabs/RADIO)                               |
+|                       | DINO-WM                               | Zhou et al.                                                              |
+|                       | YOLO-World                            | [Cheng et al.](https://github.com/AILabCVC/YOLO-World)                  |
+| **Image Segmentation** | CLIPSeg                               | [Lüdecke and Ecker](https://github.com/timojl/clipseg)                   |
+|                       | SAM                                   | [Meta AI Research, FAIR](https://segment-anything.com)                   |
+|                       | Embodied-SAM                          | [Xu et al.](https://github.com/xuxw98/ESAM)                              |
+|                       | Point-SAM                             | [Zhou et al.](https://github.com/zyc00/Point-SAM)                        |
+|                       | Open-Vocabulary SAM                   | [Yuan et al.](https://www.mmlab-ntu.com/project/ovsam/)                  |
+|                       | TAP                                   | [Pan et al.](https://github.com/baaivision/tokenize-anything)           |
+|                       | EfficientSAM                          | [Xiong et al.](https://yformer.github.io/efficient-sam/)                |
+|                       | MobileSAM                             | [Zhang et al.](https://github.com/ChaoningZhang/MobileSAM)              |
+|                       | SAM 2                                 | [Meta AI Research, FAIR](https://ai.meta.com/sam2/)                      |
+|                       | SAMURAI                               | [University of Washington](https://github.com/yangchris11/samurai)       |
+|                       | SegGPT                                | [Wang et al.](https://github.com/baaivision/Painter)                     |
+|                       | Osprey                                | [Yuan et al.](https://github.com/CircleRadon/Osprey)                     |
+|                       | SEEM                                  | Zou et al.                                                               |
+|                       | Seal                                  | [Liu et al.](https://github.com/youquanl/Segment-Any-Point-Cloud)        |
+|                       | LISA                                  | [Lai et al.](https://github.com/dvlabresearch/LISA)                      |
+| **Depth Estimation**  | ZoeDepth                              | [Bhat et al.](https://github.com/isl-org/ZoeDepth)                       |
+|                       | ScaleDepth                            | [Zhu et al.](https://ruijiezhu94.github.io/ScaleDepth/)                  |
+|                       | Depth Anything                        | [Yang et al.](https://depth-anything.github.io)                          |
+|                       | Depth Anything V2                     | [Yang et al.](https://depth-anything-v2.github.io/)                      |
+|                       | Depth Pro                             | [Apple](https://github.com/apple/ml-depth-pro)                           |
 
 ## Summary of Methods and Models
-*(Coming soon: table showcasing the summary of various methods and models.)*
+### Visual Perception
+
+| Title              | Type         | Publication        | Code            |
+|--------------------|-------------|--------------------|-----------------|
+| Li et al. (A Benchmark for UAV-View Natural Language-Guided Tracking)       | VFM         | [ _MDPI_ ](https://www.mdpi.com/2079-9292/13/9/1706)      | [ _GitHub_ ](https://github.com/Lich-King000/UAVNLT)  |
+| Ma et al. (Applying Unsupervised Semantic Segmentation to High-Resolution UAV Imagery for Enhanced Road Scene Parsing)       | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2402.02985)      | - |
+| Limberg et al. ()  | VFM+VLM     | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| Kim et al. ()      | VLM+VFM     | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| LGNet ()           | VFM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| Sakaino et al. ()  | VLM+VFM     | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| COMRP ()           | VFM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| CrossEarth ()      | VFM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| TanDepth ()        | VFM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| DroneGPT ()        | VLM+LLM+VFM | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| de Zarzà et al. () | LLM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| AeroAgent ()       | VLM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| RS-LLaVA ()        | VLM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| GeoRSCLIP ()       | VFM         | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+| SkyEyeGPT ()       | VFM+LLM     | [ _Arxiv_ ]()      | [ _GitHub_ ]()  |
+
+### Flight Control
+
+| Title             | Type | Publication       | Code           |
+|-------------------|-----:|-------------------|----------------|
+| PromptCraft ()    | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Zhong et al. ()   | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Tazir et al. ()   | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Phadke et al. ()  | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| EAI-SIM ()        | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| TAIiST ()         | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Swarm-GPT ()      | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| FlockGPT ()       | LLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| CLIPSwarm ()      | VFM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+
+### Planning
+
+| Title          | Type         | Publication       | Code           |
+|----------------|-------------:|-------------------|----------------|
+| TypeFly ()     | LLM          | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| SPINE ()       | LLM+VFM+VLM  | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| LEVIOSA ()     | LLM          | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| TPML ()        | LLM          | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| REAL ()        | LLM          | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Liu et al. ()  | LLM          | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+
+### VLN
+
+| Title                | Type         | Publication       | Code           |
+|----------------------|-------------:|-------------------|----------------|
+| NaVid ()            | VFM+LLM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| VLN-MP ()           | VFM           | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Gao et al. ()       | VFM+LLM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| MGP ()              | LLM+VFM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| UAV Navigation LLM () | LLM+VFM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| GOMAA-Geo ()        | LLM+VFM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| NavAgent ()         | LLM+VFM+VLM   | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| ASMA ()             | LLM+VFM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Zhang et al. ()     | VFM+LLM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Chen et al. ()      | LLM           | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| CloudTrack ()       | VFM+VLM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| NEUSIS ()           | VFM+VLM       | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Say-REAPEx ()       | LLM           | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+
+### Infrastructures
+
+| Title             | Type    | Publication       | Code           |
+|-------------------|--------:|-------------------|----------------|
+| DTLLM-VLT ()      | VFM+LLM | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Yao et al. ()     | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| GPG2A ()          | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| AeroVerse ()      | VLM+LLM | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Tang et al. ()    | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Xu et al. ()      | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| LLM-RS ()         | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
+| Pineli et al. ()  | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
 
 ## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
 ### Environmental Perception 
@@ -289,7 +391,8 @@ We want to thank the following contributors for creating, maintaining, and curat
 
 - **Yonglin Tian** 
 - **Fei Lin** 
-- **Yiduo Li**  
+- **Yiduo Li**
+- **Tengchao Zhang**  
 - **Xuan Fu**
 
 If you have any questions about this opinionated list, please get in touch with **Yonglin Tian** 📧: [yonglin.tian@ia.ac.cn](mailto:yonglin.tian@ia.ac.cn) and **Fei Lin** 📧: [feilin@ieee.org](mailto:feilin@ieee.org).  
