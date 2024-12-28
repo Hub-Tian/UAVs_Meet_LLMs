@@ -261,6 +261,20 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | **_AI based method_**                    |           Deep Learning          |
 |                                          |      Reinforcement Learning      |
 
+### UAV Swarm Task Allocation
+
+|              **Category**              |              **Example**              |
+|:--------------------------------------:|:-------------------------------------:|
+| **_Heuristic Algorithm_**              | Particle Swarm Optimization Algorithm |
+|                                        |           Genetic Algorithm           |
+|                                        |     Simulated Annealing Algorithm     |
+| **_AI Based Algorithm_**               |         Reinforcement Learning        |
+|                                        |       Artificial Neural Network       |
+| **_Mathematical Programming Methods_** |       Mixed Integer Programming       |
+| **_Market Mechanism Based Method_**    |        Auction Based Algorithm        |
+|                                        |    Consensus Based Bundle Algorithm   |
+|                                        |         Contract Net Protocol         |
+
 ## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
 ### Environmental Perception 
 
