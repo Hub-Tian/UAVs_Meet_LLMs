@@ -276,6 +276,18 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                                        |    Consensus Based Bundle Algorithm   |
 |                                        |         Contract Net Protocol         |
 
+### UAV Emboided Configurations
+
+| **Category**           | **Characteristics**                                                                             | **Advantages**                                             | **Disadvantages**                                      |
+|------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
+| **Fixed-wing UAV**      | Fixed wings generate lift with forward motion.                                                  | High speed, long endurance, stable flight.                 | Cannot hover, high demands for takeoff/landing areas.   |
+| **Multirotor UAV**      | Multiple rotors provide lift and control.                                                      | Low cost, easy operation, capable of VTOL and hovering.    | Limited flight time, low speed, small payload capacity. |
+| **Unmanned Helicopter** | Single or dual rotors allow vertical take-off and hovering.                                    | High payload capacity, good wind resistance, long endurance, VTOL. | Complex structure, higher maintenance cost, slower than fixed-wing UAVs. |
+| **Hybrid UAV**          | Combines fixed-wing and multirotor capabilities.                                                | Flexible missions, long endurance, VTOL.                   | Complex mechanisms, higher cost.                       |
+| **Flapping-wing UAV**   | Uses clap-and-fling mechanism for flight.                                                      | Low noise, high propulsion efficiency, high maneuverability. | Complex analysis and control, limited payload capacity. |
+| **Unmanned Airship**    | Aerostat aircraft with gasbag for lift.                                                         | Low cost, low noise.                                      | Low speed, low maneuverability, highly affected by wind. |
+
+
 ## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
 ### Environmental Perception 
 
