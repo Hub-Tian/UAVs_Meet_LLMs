@@ -251,15 +251,15 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ### UAV Swarm Path Planning Method
 
-| **category**                       | **example**                      |   |   |   |
-|------------------------------------|----------------------------------|---|---|---|
-| Intelligent optimization algorithm | Ant Colony Algorithm             |   |   |   |
-|                                    | Genetic Algorithm                |   |   |   |
-|                                    | Simulated Annealing Algorithm    |   |   |   |
-| Mathematical programming           | mixed integer linear programming |   |   |   |
-|                                    | nonlinear programming            |   |   |   |
-| AI based method                    | Deep Learning                    |   |   |   |
-|                                    | Reinforcement Learning           |   |   |   |
+|               **Category**               |            **Example**           |
+|:----------------------------------------:|:--------------------------------:|
+| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       |
+|                                          |         Genetic Algorithm        |
+|                                          |   Simulated Annealing Algorithm  |
+| **_Mathematical programming_**           | mixed integer linear programming |
+|                                          |       nonlinear programming      |
+| **_AI based method_**                    |           Deep Learning          |
+|                                          |      Reinforcement Learning      |
 
 ## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
 ### Environmental Perception 
