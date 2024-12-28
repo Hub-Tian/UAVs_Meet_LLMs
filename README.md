@@ -251,30 +251,31 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ### UAV Swarm Path Planning Method
 
-|               **Category**               |            **Examples**           | **Related Links**                                                                 |
+|               **Category**               |            **Examples**           | **References**                                                                 |
 |:----------------------------------------:|:--------------------------------:|:--------------------------------------------------------------------------------:|
-| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       | [Link 1](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
-|                                          |         Genetic Algorithm        | [Link 2](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
-|                                          |   Simulated Annealing Algorithm  | [Link 3](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8483993)        |
-| **_Mathematical programming_**           | mixed integer linear programming | [Link 4](https://journals.sagepub.com/doi/abs/10.1177/0954410015609361)          |
-|                                          |       nonlinear programming      | [Link 5](https://arc.aiaa.org/doi/abs/10.2514/6.2006-6199)                      |
-| **_AI based method_**                    |           Deep Learning          | [Link 6](https://www.sciencedirect.com/science/article/abs/pii/S1270963820311172?via%3Dihub) |
-|                                          |      Reinforcement Learning      | [Link 7](https://doi.org/10.1016/j.ast.2021.107052)                             |
+| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
+|                                          |         Genetic Algorithm        | [Ref](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
+|                                          |   Simulated Annealing Algorithm  | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8483993)        |
+| **_Mathematical programming_**           | mixed integer linear programming | [Ref](https://journals.sagepub.com/doi/abs/10.1177/0954410015609361)          |
+|                                          |       nonlinear programming      | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2006-6199)                      |
+| **_AI based method_**                    |           Deep Learning          | [Ref](https://www.sciencedirect.com/science/article/abs/pii/S1270963820311172?via%3Dihub) |
+|                                          |      Reinforcement Learning      | [Ref](https://doi.org/10.1016/j.ast.2021.107052)                             |
 
 
 ### UAV Swarm Task Allocation
 
-|              **Category**              |              **Examples**              |
-|:--------------------------------------:|:-------------------------------------:|
-| **_Heuristic Algorithm_**              | Particle Swarm Optimization Algorithm |
-|                                        |           Genetic Algorithm           |
-|                                        |     Simulated Annealing Algorithm     |
-| **_AI Based Algorithm_**               |         Reinforcement Learning        |
-|                                        |       Artificial Neural Network       |
-| **_Mathematical Programming Methods_** |       Mixed Integer Programming       |
-| **_Market Mechanism Based Method_**    |        Auction Based Algorithm        |
-|                                        |    Consensus Based Bundle Algorithm   |
-|                                        |         Contract Net Protocol         |
+| **Category**                      | **Examples**                            | **References**                                                                                   |
+|:----------------------------------:|:---------------------------------------:|:------------------------------------------------------------------------------------------------:|
+| **_Heuristic Algorithm_**          | Particle Swarm Optimization Algorithm   | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2008-6837)                                      |
+|                                    | Genetic Algorithm                       | [Ref](https://ieeexplore.ieee.org/abstract/document/9483937)                                  |
+|                                    | Simulated Annealing Algorithm           | [Ref](https://iopscience.iop.org/article/10.1088/1742-6596/2246/1/012081/meta)                |
+| **_AI Based Algorithm_**           | Reinforcement Learning                  | [Ref](https://doi.org/10.1016/j.ast.2019.06.024)                                              |
+|                                    | Artificial Neural Network               | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10670550)                      |
+| **_Mathematical Programming Methods_** | Mixed Integer Programming              | [Ref](https://doi.org/10.2514/6.2004-6410)                                                   |
+| **_Market Mechanism Based Method_** | Auction Based Algorithm                 | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7813107)                       |
+|                                    | Consensus Based Bundle Algorithm        | [Ref](https://doi.org/10.3390/s20082307)                                                     |
+|                                    | Contract Net Protocol                   | [Ref](https://doi.org/10.3390/s22124486)                                                     |
+
 
 ### UAV Swarm Formation Control Algorithm
 
