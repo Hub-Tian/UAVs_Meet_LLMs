@@ -251,7 +251,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ### UAV Swarm Path Planning Method
 
-|               **Category**               |            **Example**           | **Related Links**                                                                 |
+|               **Category**               |            **Examples**           | **Related Links**                                                                 |
 |:----------------------------------------:|:--------------------------------:|:--------------------------------------------------------------------------------:|
 | **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       | [Link 1](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
 |                                          |         Genetic Algorithm        | [Link 2](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
@@ -264,7 +264,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ### UAV Swarm Task Allocation
 
-|              **Category**              |              **Example**              |
+|              **Category**              |              **Examples**              |
 |:--------------------------------------:|:-------------------------------------:|
 | **_Heuristic Algorithm_**              | Particle Swarm Optimization Algorithm |
 |                                        |           Genetic Algorithm           |
@@ -275,6 +275,16 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | **_Market Mechanism Based Method_**    |        Auction Based Algorithm        |
 |                                        |    Consensus Based Bundle Algorithm   |
 |                                        |         Contract Net Protocol         |
+
+### UAV Swarm Formation Control Algorithm
+
+|            **Category**            |                  **Example**                 |                                  **References**                                 |
+|:----------------------------------:|:--------------------------------------------:|:-------------------------------------------------------------------------------:|
+| **_    Centralized Control   _**   |               Virtual Structure              |     [Ref](https://ascelibrary.org/doi/abs/10.1061/(ASCE)AS.1943-5525.0000351)          |
+|                                    |           Leader-Follower Approaches         |     [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=680621)             |
+| **_    Decentralized Control   _** |     Decentralized Model Prediction Method    | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1429425)                |
+| **_    Distributed Control   _**   |                Behavior Method               |     [Ref](https://intapi.sciendo.com/pdf/10.1515/ama-2016-0015)                        |
+|                                    |               Consistency Method             | [Ref](https://doi.org/10.3390/drones7030185)                                           |
 
 ### UAV Emboided Configurations
 
