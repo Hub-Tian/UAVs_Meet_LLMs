@@ -249,6 +249,18 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | LLM-RS ()         | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
 | Pineli et al. ()  | LLM     | [ _Arxiv_ ]()     | [ _GitHub_ ]() |
 
+### UAV Swarm Path Planning Method
+
+| **category**                       | **example**                      |   |   |   |
+|------------------------------------|----------------------------------|---|---|---|
+| Intelligent optimization algorithm | Ant Colony Algorithm             |   |   |   |
+|                                    | Genetic Algorithm                |   |   |   |
+|                                    | Simulated Annealing Algorithm    |   |   |   |
+| Mathematical programming           | mixed integer linear programming |   |   |   |
+|                                    | nonlinear programming            |   |   |   |
+| AI based method                    | Deep Learning                    |   |   |   |
+|                                    | Reinforcement Learning           |   |   |   |
+
 ## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
 ### Environmental Perception 
 
