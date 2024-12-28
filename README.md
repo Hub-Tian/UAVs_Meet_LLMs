@@ -276,6 +276,12 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                                    | Consensus Based Bundle Algorithm        | [Ref](https://doi.org/10.3390/s20082307)                                                     |
 |                                    | Contract Net Protocol                   | [Ref](https://doi.org/10.3390/s22124486)                                                     |
 
+### UAV Swarm Communication architecture
+
+|                **Category**               |                      **References**                      |
+|:-----------------------------------------:|:--------------------------------------------------------:|
+|     infrastructure-based architectures    | [Ref](https://und.edu/research/rias/_files/docs/swarm_ieee.pdf) |
+| Flying Ad-hoc Network (FANET) Architectur | [Ref](https://doi.org/10.1016/j.adhoc.2012.12.004)              |
 
 ### UAV Swarm Formation Control Algorithm
 
