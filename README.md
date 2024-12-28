@@ -251,15 +251,16 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ### UAV Swarm Path Planning Method
 
-|               **Category**               |            **Example**           |
-|:----------------------------------------:|:--------------------------------:|
-| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       |
-|                                          |         Genetic Algorithm        |
-|                                          |   Simulated Annealing Algorithm  |
-| **_Mathematical programming_**           | mixed integer linear programming |
-|                                          |       nonlinear programming      |
-| **_AI based method_**                    |           Deep Learning          |
-|                                          |      Reinforcement Learning      |
+|               **Category**               |            **Example**           | **Related Links**                                                                 |
+|:----------------------------------------:|:--------------------------------:|:--------------------------------------------------------------------------------:|
+| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       | [Link 1](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
+|                                          |         Genetic Algorithm        | [Link 2](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
+|                                          |   Simulated Annealing Algorithm  | [Link 3](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8483993)        |
+| **_Mathematical programming_**           | mixed integer linear programming | [Link 4](https://journals.sagepub.com/doi/abs/10.1177/0954410015609361)          |
+|                                          |       nonlinear programming      | [Link 5](https://arc.aiaa.org/doi/abs/10.2514/6.2006-6199)                      |
+| **_AI based method_**                    |           Deep Learning          | [Link 6](https://www.sciencedirect.com/science/article/abs/pii/S1270963820311172?via%3Dihub) |
+|                                          |      Reinforcement Learning      | [Link 7](https://doi.org/10.1016/j.ast.2021.107052)                             |
+
 
 ### UAV Swarm Task Allocation
 
