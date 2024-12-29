@@ -150,11 +150,11 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                       | RegionCLIP                            | [Microsoft Research](https://github.com/microsoft/RegionCLIP)           |
 |                       | EVA-CLIP                              | [Sun et al.](https://github.com/baaivision/EVA/tree/master/EVA-CLIP)    |
 | **Object Detection**  | GLIP                                  | [Microsoft Research](https://github.com/microsoft/GLIP)                 |
-|                       | DINO                                  | Zhang et al.                                                             |
+|                       | DINO                                  | [Zhang et al.](https://github.com/IDEA-Research/DINO)                   |
 |                       | Grounding-DINO                        | [Liu et al.](https://github.com/IDEA-Research/GroundingDINO)            |
 |                       | DINOv2                                | [Meta AI Research](https://github.com/facebookresearch/dinov2)          |
 |                       | AM-RADIO                              | [NVIDIA](https://github.com/NVlabs/RADIO)                               |
-|                       | DINO-WM                               | Zhou et al.                                                              |
+|                       | DINO-WM                               | [Zhou et al.](https://dino-wm.github.io/)                               |
 |                       | YOLO-World                            | [Cheng et al.](https://github.com/AILabCVC/YOLO-World)                  |
 | **Image Segmentation** | CLIPSeg                               | [Lüdecke and Ecker](https://github.com/timojl/clipseg)                   |
 |                       | SAM                                   | [Meta AI Research, FAIR](https://segment-anything.com)                   |
