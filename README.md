@@ -82,16 +82,16 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
   - [UAV Swarm Communication architecture](#uav-swarm-communication-architecture)
   - [UAV Swarm Formation Control Algorithm](#uav-swarm-formation-control-algorithm)
   - [UAV Emboided Configurations](#uav-emboided-configurations)
-- [UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection](#uav-oriented-datasets-on-environmental-perception--event-recognition--detection)
+- [General Domain Datasets for UAV](#general-domain-datasets-for-uav)
   - [Environmental Perception](#environmental-perception)
   - [Event Recognition](#event-recognition)
   - [Detection](#detection)
-- [UAV-oriented Datasets on Object Tracking](#uav-oriented-datasets-on-object-tracking)
-- [UAV-oriented Datasets on Action Recognition](#uav-oriented-datasets-on-action-recognition)
-- [UAV-oriented Datasets on Navigation and Localization](#uav-oriented-datasets-on-navigation-and-localization)
-- [UAV-oriented Datasets on Transportation](#uav-oriented-datasets-on-transportation)
-- [UAV-oriented Datasets on Remote Sensing](#uav-oriented-datasets-on-remote-sensing)
-- [UAV-oriented Datasets on Agriculture & Industry & Emergency Response & Military & Wildlife](#uav-oriented-datasets-on-agriculture--industry--emergency-response--military--wildlife)
+  - [Object Tracking](#object-tracking)
+  - [Action Recognition](#action-recognition)
+  - [Navigation and Localization](#navigation-and-localization)
+- [Domain-specific Datasets for UAV](#domain-specific-datasets-for-uav) 
+  - [Transportation](#transportation)
+  - [Remote Sensing](#remote-sensing)
   - [Agriculture](#agriculture)
   - [Industry](#industry)
   - [Emergency Response](#emergency-response)
@@ -310,7 +310,8 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | **Unmanned Airship**    | Aerostat aircraft with gasbag for lift.                                                         | Low cost, low noise.                                      | Low speed, low maneuverability, highly affected by wind. |
 
 
-## UAV-oriented Datasets on Environmental Perception & Event Recognition & Detection
+## General Domain Datasets for UAV
+
 ### Environmental Perception 
 
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
@@ -335,7 +336,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [IDTDSAT](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) | 2019     | Infrared image, Trajectory            | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. |
 | [DTDAOTRES](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) | 2019     | Radar                                 | 15 segments of 8.76 GB.                                                                                     |
 
-## UAV-oriented Datasets on Object Tracking
+### Object Tracking
 
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -351,9 +352,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [Stanford Drone](https://cvgl.stanford.edu/projects/uav_data/) | 2016     | Video                                 | 19,000+ target tracks, containing 6 types of targets, about 20,000 target interactions, 40,000 target interactions with the environment, covering 100+ scenes in the university campus. |
 | [COWC](https://gdo152.llnl.gov/cowc/)                      | 2016     | Image                                 | 32,716 unique vehicles and 58,247 non-vehicle targets were labeled. Covering 6 different geographical areas. |
 
----
-
-## UAV-oriented Datasets on Action Recognition
+### Action Recognition
 
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -365,7 +364,8 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [Drone-Action](https://asankagp.github.io/droneaction/)      | 2019     | Video                                 | 240 HD videos, 66,919 frames, 13 types of action.                                                          |
 | [UAV-GESTURE](https://asankagp.github.io/uavgesture/)        | 2019     | Video                                 | 119 videos, 37,151 frames, 13 types of gestures, 10 actors.                                                |
 
-## UAV-oriented Datasets on Navigation and Localization
+### Navigation and Localization
+
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [CityNav](https://water-cookie.github.io/city-nav-proj/)    | 2024     | Image, Text                           | 32,000 natural language descriptions and companion tracks.                                                   |
@@ -377,7 +377,10 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [University-1652](https://github.com/layumi/University1652-Baseline) | 2020     | Image                                 | 1,652 university buildings, 72 universities, 50,218 training images, 37,855 UAV query images, 701 satellite query images, and 21,099 ordinary & 5,580 street view images. |
 
 
-## UAV-oriented Datasets on Transportation
+## Domain-specific Datasets for UAV
+
+### Transportation
+
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [VisDrone](http://aiskyeye.com/home/)                       | 2022     | Video, Image                          | 263 videos, 179,264 frames. 10,209 still images. More than 2,500,000 object instance annotations. The data covers 14 different cities, covering a wide range of weather and light conditions. |
@@ -392,7 +395,8 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [VEDAI](https://downloads.greyc.fr/vedai)                   | 2016     | Image                                 | 1,210 images (1024 × 1024 and 512 × 512 pixels), 9 types of vehicles, containing about 6,650 targets in total. |
 
 
-## UAV-oriented Datasets on Remote Sensing
+### Remote Sensing
+
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [RET-3](https://github.com/ChenDelong1999/RemoteCLIP?utm_source=chatgpt.com) | 2024     | Image, Text                           | Approximately 13,000 samples. Including RSICD, RSITMD and UCM.                                             |
@@ -409,8 +413,8 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [NWPU VHR-10](https://github.com/Gaoshuaikun/NWPU-VHR-10)   | 2014     | Image                                 | 800 high-resolution images, of which 650 contain targets and 150 are background images, covering 10 categories (such as aircraft, ships, bridges, etc.), totaling more than 3,000 targets. |
 
 
-## UAV-oriented Datasets on Agriculture & Industry & Emergency Response & Military & Wildlife
 ### Agriculture
+
 | **Name**                                                   | **Year** | **Types**                              | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [WEED-2C](https://github.com/EvertonTetila/WEED2C-Dataset/?tab=readme-ov-file) | 2024     | Image                                  | Contains 4,129 labeled samples covering 2 weed species.                                                     |
