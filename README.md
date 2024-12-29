@@ -168,7 +168,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                       | SAMURAI                               | [University of Washington](https://github.com/yangchris11/samurai)       |
 |                       | SegGPT                                | [Wang et al.](https://github.com/baaivision/Painter)                     |
 |                       | Osprey                                | [Yuan et al.](https://github.com/CircleRadon/Osprey)                     |
-|                       | SEEM                                  | Zou et al.                                                               |
+|                       | SEEM                                  | [Zou et al.](https://github.com/UX-Decoder/Segment-Everything-Everywhere-All-At-Once)   |
 |                       | Seal                                  | [Liu et al.](https://github.com/youquanl/Segment-Any-Point-Cloud)        |
 |                       | LISA                                  | [Lai et al.](https://github.com/dvlabresearch/LISA)                      |
 | **Depth Estimation**  | ZoeDepth                              | [Bhat et al.](https://github.com/isl-org/ZoeDepth)                       |
