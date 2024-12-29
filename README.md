@@ -487,7 +487,10 @@ If you find this repository useful, please consider citing this paper:
         Xuan Fu and 
         Jun Huang and 
         Xingyuan Dai and 
-        Yisheng Lv and 
+        Chunwei Tian and
+        Bai Li and
+        Yisheng Lv and
+        Levente Kovács and 
         Fei-Yue Wang
       },
       year={2025},
