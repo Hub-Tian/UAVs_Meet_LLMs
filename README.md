@@ -46,10 +46,10 @@ If you find it useful, please star ⭐ this repo and [cite](#citation) the paper
 
 ## 🔥 News
 - **[2024-12-28]** This repository is newly launched to explore the synergy between **Unmanned Aerial Vehicles (UAVs)** and **Large Language Models (LLMs)**. We will continually update it with fresh papers, demos, and insights.
-- **[2023-12-27]** [Yiduo Li](https://github.com/Leeeufo02) added the content of the dataset section
-- **[2023-12-27]** [Fei Lin](https://github.com/linfei-mise) and [Yonglin Tian](https://github.com/Hub-Tian) curated this list and published the first version.
+- **[2024-12-27]** [Yiduo Li](https://github.com/Leeeufo02) added the content of the dataset section
+- **[2024-12-27]** [Fei Lin](https://github.com/linfei-mise) and [Yonglin Tian](https://github.com/Hub-Tian) curated this list and published the first version.
 
-> If you have any questions or suggestions, please feel free to open an [issue](https://github.com/Hub-Tian/UAVs_Meet_LLMs/issues) or contact us via email.
+> If you have any questions or suggestions, please feel free to open an [issue](https://github.com/Hub-Tian/UAVs_Meet_LLMs/issues) or contact us via [email](yonglin.tian@ia.ac.cn).
 
 ---
 
@@ -57,8 +57,8 @@ If you find it useful, please star ⭐ this repo and [cite](#citation) the paper
 This repository accompanies our work on **"UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility"**.  
 Here, we primarily store various **tables** referenced in the survey/overview paper. These tables focus on:
 
-- Summarization of **LLMs, VLMs, and VFMs**  
-- Summaries of **Methods and Models**  
+- Summarization of typical **LLMs, VLMs, and VFMs**  
+- Awesome works on **Fundation Models based UAV Systems**  
 - **UAV-oriented Datasets** across multiple application domains
 
 > **Note**: The goal is to provide a structured, easy-to-navigate resource for researchers interested in the intersection of UAVs and Large Language Models.
@@ -67,28 +67,24 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ## Table of Contents
 
-- [Summarization of LLMs, VLMs, and VFMs](#summarization-of-llms-vlms-and-vfms)
+- [Typical LLMs, VLMs, and VFMs](#typical-llms-vlms-and-vfms)
   - [LLMs](#llms)
   - [VLMs](#vlms)
   - [VFMs](#vfms)
-- [Summary of Methods and Models](#summary-of-methods-and-models)
+- [Advances in Fundation Models based UAV Systems](#advances-in-foundation-models-based-uav-systems)
   - [Visual Perception](#visual-perception)
   - [Flight Control](#flight-control)
   - [Planning](#planning)
   - [VLN](#vln)
   - [Infrastructures](#infrastructures)
-  - [UAV Swarm Path Planning Method](#uav-swarm-path-planning-method)
-  - [UAV Swarm Task Allocation](#uav-swarm-task-allocation)
-  - [UAV Swarm Communication architecture](#uav-swarm-communication-architecture)
-  - [UAV Swarm Formation Control Algorithm](#uav-swarm-formation-control-algorithm)
-  - [UAV Emboided Configurations](#uav-emboided-configurations)
-- [General Domain Datasets for UAV](#general-domain-datasets-for-uav)
+
+- [General-domain Datasets for UAV](#general-domain-datasets-for-uav)
   - [Environmental Perception](#environmental-perception)
   - [Event Recognition](#event-recognition)
-  - [Detection](#detection)
   - [Object Tracking](#object-tracking)
   - [Action Recognition](#action-recognition)
   - [Navigation and Localization](#navigation-and-localization)
+
 - [Domain-specific Datasets for UAV](#domain-specific-datasets-for-uav) 
   - [Transportation](#transportation)
   - [Remote Sensing](#remote-sensing)
@@ -97,10 +93,18 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
   - [Emergency Response](#emergency-response)
   - [Military](#military)
   - [Wildlife](#wildlife)
+  - [Drone Detection](#drone-detection)
+
+- [Preliminaries for UAVs](#preliminaries-for-uavs) 
+  - [UAV Emboided Configurations](#uav-emboided-configurations)
+  - [UAV Swarm Path Planning Method](#uav-swarm-path-planning-method)
+  - [UAV Swarm Task Allocation](#uav-swarm-task-allocation)
+  - [UAV Swarm Communication architecture](#uav-swarm-communication-architecture)
+  - [UAV Swarm Formation Control Algorithm](#uav-swarm-formation-control-algorithm)
 
 ---
 
-## Summarization of LLMs, VLMs, and VFMs
+## Typical LLMs, VLMs, and VFMs
 
 ### LLMs
 
@@ -177,7 +181,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                       | Depth Anything V2                     | [Yang et al.](https://depth-anything-v2.github.io/)                      |
 |                       | Depth Pro                             | [Apple](https://github.com/apple/ml-depth-pro)                           |
 
-## Summary of Methods and Models
+## Advances in Foundation Models based UAV Systems
 ### Visual Perception
 
 | Title              | Type         | Publication        | Code            |
@@ -254,63 +258,8 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | LLM-RS (Real-time Integration of Fine-tuned Large Language Model for Improved Decision-Making in Reinforcement Learning)         | LLM     | [ _IJCNN 2024_ ](https://ieeexplore.ieee.org/abstract/document/10650538?casa_token=nT06OMN91ZEAAAAA:rqTAbczP0wz615qxgPtIitMnscaFSUoA_Vs5hJ58uiVGXu4gNEqntpK9AfYfVXq89-JsZsIO_Vfh)     | - |
 | Pineli et al. (Evaluating Voice Command Pipelines for Drone Control: From STT and LLM to Direct Classification and Siamese Networks)  | LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2407.08658)     | - |
 
-### UAV Swarm Path Planning Method
 
-|               **Category**               |            **Examples**           | **References**                                                                 |
-|:----------------------------------------:|:--------------------------------:|:--------------------------------------------------------------------------------:|
-| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
-|                                          |         Genetic Algorithm        | [Ref](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
-|                                          |   Simulated Annealing Algorithm  | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8483993)        |
-| **_Mathematical programming_**           | mixed integer linear programming | [Ref](https://journals.sagepub.com/doi/abs/10.1177/0954410015609361)          |
-|                                          |       nonlinear programming      | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2006-6199)                      |
-| **_AI based method_**                    |           Deep Learning          | [Ref](https://www.sciencedirect.com/science/article/abs/pii/S1270963820311172?via%3Dihub) |
-|                                          |      Reinforcement Learning      | [Ref](https://doi.org/10.1016/j.ast.2021.107052)                             |
-
-
-### UAV Swarm Task Allocation
-
-| **Category**                      | **Examples**                            | **References**                                                                                   |
-|:----------------------------------:|:---------------------------------------:|:------------------------------------------------------------------------------------------------:|
-| **_Heuristic Algorithm_**          | Particle Swarm Optimization Algorithm   | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2008-6837)                                      |
-|                                    | Genetic Algorithm                       | [Ref](https://ieeexplore.ieee.org/abstract/document/9483937)                                  |
-|                                    | Simulated Annealing Algorithm           | [Ref](https://iopscience.iop.org/article/10.1088/1742-6596/2246/1/012081/meta)                |
-| **_AI Based Algorithm_**           | Reinforcement Learning                  | [Ref](https://doi.org/10.1016/j.ast.2019.06.024)                                              |
-|                                    | Artificial Neural Network               | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10670550)                      |
-| **_Mathematical Programming Methods_** | Mixed Integer Programming              | [Ref](https://doi.org/10.2514/6.2004-6410)                                                   |
-| **_Market Mechanism Based Method_** | Auction Based Algorithm                 | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7813107)                       |
-|                                    | Consensus Based Bundle Algorithm        | [Ref](https://doi.org/10.3390/s20082307)                                                     |
-|                                    | Contract Net Protocol                   | [Ref](https://doi.org/10.3390/s22124486)                                                     |
-
-### UAV Swarm Communication architecture
-
-|                **Category**               |                      **References**                      |
-|:-----------------------------------------:|:--------------------------------------------------------:|
-|     infrastructure-based architectures    | [Ref](https://und.edu/research/rias/_files/docs/swarm_ieee.pdf) |
-| Flying Ad-hoc Network (FANET) Architectur | [Ref](https://doi.org/10.1016/j.adhoc.2012.12.004)              |
-
-### UAV Swarm Formation Control Algorithm
-
-|            **Category**            |                  **Example**                 |                                  **References**                                 |
-|:----------------------------------:|:--------------------------------------------:|:-------------------------------------------------------------------------------:|
-| **_    Centralized Control   _**   |               Virtual Structure              |     [Ref](https://ascelibrary.org/doi/abs/10.1061/(ASCE)AS.1943-5525.0000351)          |
-|                                    |           Leader-Follower Approaches         |     [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=680621)             |
-| **_    Decentralized Control   _** |     Decentralized Model Prediction Method    | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1429425)                |
-| **_    Distributed Control   _**   |                Behavior Method               |     [Ref](https://intapi.sciendo.com/pdf/10.1515/ama-2016-0015)                        |
-|                                    |               Consistency Method             | [Ref](https://doi.org/10.3390/drones7030185)                                           |
-
-### UAV Emboided Configurations
-
-| **Category**           | **Characteristics**                                                                             | **Advantages**                                             | **Disadvantages**                                      |
-|------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| **Fixed-wing UAV**      | Fixed wings generate lift with forward motion.                                                  | High speed, long endurance, stable flight.                 | Cannot hover, high demands for takeoff/landing areas.   |
-| **Multirotor UAV**      | Multiple rotors provide lift and control.                                                      | Low cost, easy operation, capable of VTOL and hovering.    | Limited flight time, low speed, small payload capacity. |
-| **Unmanned Helicopter** | Single or dual rotors allow vertical take-off and hovering.                                    | High payload capacity, good wind resistance, long endurance, VTOL. | Complex structure, higher maintenance cost, slower than fixed-wing UAVs. |
-| **Hybrid UAV**          | Combines fixed-wing and multirotor capabilities.                                                | Flexible missions, long endurance, VTOL.                   | Complex mechanisms, higher cost.                       |
-| **Flapping-wing UAV**   | Uses clap-and-fling mechanism for flight.                                                      | Low noise, high propulsion efficiency, high maneuverability. | Complex analysis and control, limited payload capacity. |
-| **Unmanned Airship**    | Aerostat aircraft with gasbag for lift.                                                         | Low cost, low noise.                                      | Low speed, low maneuverability, highly affected by wind. |
-
-
-## General Domain Datasets for UAV
+## General-domain Datasets for UAV
 
 ### Environmental Perception 
 
@@ -328,13 +277,6 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [ERA](https://lcmou.github.io/ERA_Dataset)                 | 2020     | Video                                 | A total of 2,864 videos, including disaster events, traffic accidents, sports competitions, and other 25 categories. Each video is 24 frames/second for 5 seconds. |
 | [VIRAT](https://viratdata.org/)                            | 2016     | Video                                 | 25 hours of static ground video and 4 hours of dynamic aerial video. There are 23 event types involved.      |
 
-### Detection
-
-| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
-|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [DroneRFa](https://data.mendeley.com/datasets/f4c2b4n755/1) | 2024     | RF signal                             | It includes 24 types of UAV signals (9 types of outdoor acquisition and 15 types of indoor acquisition) and 1 type of background signals, covering 3 ISM frequency bands. |
-| [IDTDSAT](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) | 2019     | Infrared image, Trajectory            | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. |
-| [DTDAOTRES](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) | 2019     | Radar                                 | 15 segments of 8.76 GB.                                                                                     |
 
 ### Object Tracking
 
@@ -449,7 +391,73 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [WAID](https://github.com/xiaohuicui/WAID)                 | 2023     | Image                                  | 14,375 UAV images covering 6 species of wildlife and multiple environment types.                           |
 
 
+### Drone Detection
+
+| **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
+|------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [DroneRFa](https://data.mendeley.com/datasets/f4c2b4n755/1) | 2024     | RF signal                             | It includes 24 types of UAV signals (9 types of outdoor acquisition and 15 types of indoor acquisition) and 1 type of background signals, covering 3 ISM frequency bands. |
+| [IDTDSAT](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) | 2019     | Infrared image, Trajectory            | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. |
+| [DTDAOTRES](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) | 2019     | Radar                                 | 15 segments of 8.76 GB.                                                                                     |
+
 ---
+
+## Preliminaries for UAVs
+### UAV Emboided Configurations
+
+| **Category**           | **Characteristics**                                                                             | **Advantages**                                             | **Disadvantages**                                      |
+|------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
+| **Fixed-wing UAV**      | Fixed wings generate lift with forward motion.                                                  | High speed, long endurance, stable flight.                 | Cannot hover, high demands for takeoff/landing areas.   |
+| **Multirotor UAV**      | Multiple rotors provide lift and control.                                                      | Low cost, easy operation, capable of VTOL and hovering.    | Limited flight time, low speed, small payload capacity. |
+| **Unmanned Helicopter** | Single or dual rotors allow vertical take-off and hovering.                                    | High payload capacity, good wind resistance, long endurance, VTOL. | Complex structure, higher maintenance cost, slower than fixed-wing UAVs. |
+| **Hybrid UAV**          | Combines fixed-wing and multirotor capabilities.                                                | Flexible missions, long endurance, VTOL.                   | Complex mechanisms, higher cost.                       |
+| **Flapping-wing UAV**   | Uses clap-and-fling mechanism for flight.                                                      | Low noise, high propulsion efficiency, high maneuverability. | Complex analysis and control, limited payload capacity. |
+| **Unmanned Airship**    | Aerostat aircraft with gasbag for lift.                                                         | Low cost, low noise.                                      | Low speed, low maneuverability, highly affected by wind. |
+### UAV Swarm Path Planning Method
+
+|               **Category**               |            **Examples**           | **References**                                                                 |
+|:----------------------------------------:|:--------------------------------:|:--------------------------------------------------------------------------------:|
+| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
+|                                          |         Genetic Algorithm        | [Ref](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
+|                                          |   Simulated Annealing Algorithm  | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8483993)        |
+| **_Mathematical programming_**           | mixed integer linear programming | [Ref](https://journals.sagepub.com/doi/abs/10.1177/0954410015609361)          |
+|                                          |       nonlinear programming      | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2006-6199)                      |
+| **_AI based method_**                    |           Deep Learning          | [Ref](https://www.sciencedirect.com/science/article/abs/pii/S1270963820311172?via%3Dihub) |
+|                                          |      Reinforcement Learning      | [Ref](https://doi.org/10.1016/j.ast.2021.107052)                             |
+
+
+### UAV Swarm Task Allocation
+
+| **Category**                      | **Examples**                            | **References**                                                                                   |
+|:----------------------------------:|:---------------------------------------:|:------------------------------------------------------------------------------------------------:|
+| **_Heuristic Algorithm_**          | Particle Swarm Optimization Algorithm   | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2008-6837)                                      |
+|                                    | Genetic Algorithm                       | [Ref](https://ieeexplore.ieee.org/abstract/document/9483937)                                  |
+|                                    | Simulated Annealing Algorithm           | [Ref](https://iopscience.iop.org/article/10.1088/1742-6596/2246/1/012081/meta)                |
+| **_AI Based Algorithm_**           | Reinforcement Learning                  | [Ref](https://doi.org/10.1016/j.ast.2019.06.024)                                              |
+|                                    | Artificial Neural Network               | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10670550)                      |
+| **_Mathematical Programming Methods_** | Mixed Integer Programming              | [Ref](https://doi.org/10.2514/6.2004-6410)                                                   |
+| **_Market Mechanism Based Method_** | Auction Based Algorithm                 | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7813107)                       |
+|                                    | Consensus Based Bundle Algorithm        | [Ref](https://doi.org/10.3390/s20082307)                                                     |
+|                                    | Contract Net Protocol                   | [Ref](https://doi.org/10.3390/s22124486)                                                     |
+
+### UAV Swarm Communication architecture
+
+|                **Category**               |                      **References**                      |
+|:-----------------------------------------:|:--------------------------------------------------------:|
+|     infrastructure-based architectures    | [Ref](https://und.edu/research/rias/_files/docs/swarm_ieee.pdf) |
+| Flying Ad-hoc Network (FANET) Architectur | [Ref](https://doi.org/10.1016/j.adhoc.2012.12.004)              |
+
+### UAV Swarm Formation Control Algorithm
+
+|            **Category**            |                  **Example**                 |                                  **References**                                 |
+|:----------------------------------:|:--------------------------------------------:|:-------------------------------------------------------------------------------:|
+| **_    Centralized Control   _**   |               Virtual Structure              |     [Ref](https://ascelibrary.org/doi/abs/10.1061/(ASCE)AS.1943-5525.0000351)          |
+|                                    |           Leader-Follower Approaches         |     [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=680621)             |
+| **_    Decentralized Control   _** |     Decentralized Model Prediction Method    | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1429425)                |
+| **_    Distributed Control   _**   |                Behavior Method               |     [Ref](https://intapi.sciendo.com/pdf/10.1515/ama-2016-0015)                        |
+|                                    |               Consistency Method             | [Ref](https://doi.org/10.3390/drones7030185)                                           |
+
+
+
 
 ## Contributors
 We want to thank the following contributors for creating, maintaining, and curating the tables in this repository:
@@ -460,7 +468,7 @@ We want to thank the following contributors for creating, maintaining, and curat
 - **Tengchao Zhang**  
 - **Xuan Fu**
 
-If you have any questions about this opinionated list, please get in touch with **Yonglin Tian** 📧: [yonglin.tian@ia.ac.cn](mailto:yonglin.tian@ia.ac.cn) and **Fei Lin** 📧: [feilin@ieee.org](mailto:feilin@ieee.org).  
+If you have any questions about this repository, feel free to get in touch with **Yonglin Tian** [📧](mailto:yonglin.tian@ia.ac.cn) or **Fei Lin** [📧](mailto:feilin@ieee.org).  
 
 *(If you would like to contribute to this repo, please open an Issue or Pull Request.)*
 
