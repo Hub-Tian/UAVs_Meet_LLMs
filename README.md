@@ -78,14 +78,14 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
   - [VLN](#vln)
   - [Infrastructures](#infrastructures)
 
-- [General-domain Datasets for UAV](#general-domain-datasets-for-uav)
+- [General-domain Datasets for UAVs](#general-domain-datasets-for-uav)
   - [Environmental Perception](#environmental-perception)
   - [Event Recognition](#event-recognition)
   - [Object Tracking](#object-tracking)
   - [Action Recognition](#action-recognition)
   - [Navigation and Localization](#navigation-and-localization)
 
-- [Domain-specific Datasets for UAV](#domain-specific-datasets-for-uav) 
+- [Domain-specific Datasets for UAVs](#domain-specific-datasets-for-uav) 
   - [Transportation](#transportation)
   - [Remote Sensing](#remote-sensing)
   - [Agriculture](#agriculture)
@@ -94,7 +94,9 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
   - [Military](#military)
   - [Wildlife](#wildlife)
   - [Drone Detection](#drone-detection)
-
+    
+- [Open Platformers for UAVs](#Open-Platformers-for-UAVs)
+  
 - [Preliminaries for UAVs](#preliminaries-for-uavs) 
   - [UAV Emboided Configurations](#uav-emboided-configurations)
   - [UAV Swarm Path Planning Method](#uav-swarm-path-planning-method)
@@ -399,7 +401,14 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [IDTDSAT](https://www.scidb.cn/en/detail?dataSetId=720626420933459968) | 2019     | Infrared image, Trajectory            | Infrared image sequence of 22 segments, total number of frames 16,177, total number of targets 16,944, 30 tracks; image resolution 256 × 256 pixels. |
 | [DTDAOTRES](https://www.scidb.cn/en/detail?dataSetId=720626420979597312) | 2019     | Radar                                 | 15 segments of 8.76 GB.                                                                                     |
 
----
+##Open-Platformers-for-UAVs
+
+| **Name**                                                   | **Paper**                                                        |
+| [AirSim](https://microsoft.github.io/AirSim/) | Airsim: High-fidelity visual and physical simulation for autonomous vehicles |
+| [Carla](https://carla.org/) | CARLA: An open urban driving simulator |
+| [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac/sim) |  |
+| [AerialVLN Simulator](https://github.com/AirVLN/AirVLN) | Aerialvln: Vision-and-language navigation for uavs |
+| [Embodied City](https://embodied-city.fiblab.net/) | EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment |
 
 ## Preliminaries for UAVs
 ### UAV Emboided Configurations
