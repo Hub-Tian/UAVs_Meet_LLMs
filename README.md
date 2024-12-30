@@ -404,6 +404,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 ## Open-Platformers-for-UAVs
 
 | **Name**                                                   | **Paper**                                                        |
+|------------------------------------------------------------|------------------------------------------------------------------|
 | [AirSim](https://microsoft.github.io/AirSim/) | Airsim: High-fidelity visual and physical simulation for autonomous vehicles |
 | [Carla](https://carla.org/) | CARLA: An open urban driving simulator |
 | [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac/sim) |  |
