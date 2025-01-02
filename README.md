@@ -67,25 +67,26 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ## Table of Contents
 
-- [Typical LLMs, VLMs, and VFMs](#typical-llms-vlms-and-vfms)
+- [Preliminaries for UAVs](#preliminaries-for-uavs)
+  - [Typical configurations of UAV](#typical-configurations-of-uav)
+  - [UAV Swarm Path Planning Method](#uav-swarm-path-planning-method)
+  - [UAV Swarm Task Allocation](#uav-swarm-task-allocation)
+  - [UAV Swarm Communication architecture](#uav-swarm-communication-architecture)
+  - [UAV Swarm Formation Control Algorithm](#uav-swarm-formation-control-algorithm)
+
+- [Summarization of LLMs, VLMs, and VFMs](#summarization-of-llms-vlms-and-vfms)
   - [LLMs](#llms)
   - [VLMs](#vlms)
   - [VFMs](#vfms)
-- [Advances in Fundation Models based UAV Systems](#advances-in-foundation-models-based-uav-systems)
-  - [Visual Perception](#visual-perception)
-  - [Flight Control](#flight-control)
-  - [Planning](#planning)
-  - [VLN](#vln)
-  - [Infrastructures](#infrastructures)
 
-- [General-domain Datasets for UAVs](#general-domain-datasets-for-uav)
+- [General-domain Datasets for UAV](#general-domain-datasets-for-uav)
   - [Environmental Perception](#environmental-perception)
   - [Event Recognition](#event-recognition)
   - [Object Tracking](#object-tracking)
   - [Action Recognition](#action-recognition)
   - [Navigation and Localization](#navigation-and-localization)
 
-- [Domain-specific Datasets for UAVs](#domain-specific-datasets-for-uav) 
+- [Domain-specific Datasets for UAV](#domain-specific-datasets-for-uav)
   - [Transportation](#transportation)
   - [Remote Sensing](#remote-sensing)
   - [Agriculture](#agriculture)
@@ -94,19 +95,75 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
   - [Military](#military)
   - [Wildlife](#wildlife)
   - [Drone Detection](#drone-detection)
-    
-- [Open Platforms for UAVs](#Open-Platforms-for-UAVs)
-  
-- [Preliminaries for UAVs](#preliminaries-for-uavs) 
-  - [UAV Emboided Configurations](#uav-emboided-configurations)
-  - [UAV Swarm Path Planning Method](#uav-swarm-path-planning-method)
-  - [UAV Swarm Task Allocation](#uav-swarm-task-allocation)
-  - [UAV Swarm Communication architecture](#uav-swarm-communication-architecture)
-  - [UAV Swarm Formation Control Algorithm](#uav-swarm-formation-control-algorithm)
+
+- [Open Platforms for UAVs](#open-platforms-for-uavs)
+
+- [Summary of Methods and Models](#summary-of-methods-and-models)
+  - [Visual Perception](#visual-perception)
+  - [VLN](#vln)
+  - [Planning](#planning)
+  - [Flight Control](#flight-control)
+  - [Infrastructures](#infrastructures)
 
 ---
+## Preliminaries for UAVs
 
-## Typical LLMs, VLMs, and VFMs
+### Typical configurations of UAV
+
+| **Category**           | **Characteristics**                                                                             | **Advantages**                                             | **Disadvantages**                                      |
+|------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
+| **Fixed-wing UAV**      | Fixed wings generate lift with forward motion.                                                  | High speed, long endurance, stable flight.                 | Cannot hover, high demands for takeoff/landing areas.   |
+| **Multirotor UAV**      | Multiple rotors provide lift and control.                                                      | Low cost, easy operation, capable of VTOL and hovering.    | Limited flight time, low speed, small payload capacity. |
+| **Unmanned Helicopter** | Single or dual rotors allow vertical take-off and hovering.                                    | High payload capacity, good wind resistance, long endurance, VTOL. | Complex structure, higher maintenance cost, slower than fixed-wing UAVs. |
+| **Hybrid UAV**          | Combines fixed-wing and multirotor capabilities.                                                | Flexible missions, long endurance, VTOL.                   | Complex mechanisms, higher cost.                       |
+| **Flapping-wing UAV**   | Uses clap-and-fling mechanism for flight.                                                      | Low noise, high propulsion efficiency, high maneuverability. | Complex analysis and control, limited payload capacity. |
+| **Unmanned Airship**    | Aerostat aircraft with gasbag for lift.                                                         | Low cost, low noise.                                      | Low speed, low maneuverability, highly affected by wind. |
+
+### UAV Swarm Path Planning Method
+
+|               **Category**               |            **Examples**           | **References**                                                                 |
+|:----------------------------------------:|:--------------------------------:|:--------------------------------------------------------------------------------:|
+| **Intelligent optimization algorithm** |       Ant Colony Algorithm       | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
+|                                          |         Genetic Algorithm        | [Ref](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
+|                                          |   Simulated Annealing Algorithm  | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8483993)        |
+| **Mathematical programming**           | mixed integer linear programming | [Ref](https://journals.sagepub.com/doi/abs/10.1177/0954410015609361)          |
+|                                          |       nonlinear programming      | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2006-6199)                      |
+| **AI based method**                    |           Deep Learning          | [Ref](https://www.sciencedirect.com/science/article/abs/pii/S1270963820311172?via%3Dihub) |
+|                                          |      Reinforcement Learning      | [Ref](https://doi.org/10.1016/j.ast.2021.107052)                             |
+
+
+### UAV Swarm Task Allocation
+
+| **Category**                      | **Examples**                            | **References**                                                                                   |
+|:----------------------------------:|:---------------------------------------:|:------------------------------------------------------------------------------------------------:|
+| **Heuristic Algorithm**          | Particle Swarm Optimization Algorithm   | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2008-6837)                                      |
+|                                    | Genetic Algorithm                       | [Ref](https://ieeexplore.ieee.org/abstract/document/9483937)                                  |
+|                                    | Simulated Annealing Algorithm           | [Ref](https://iopscience.iop.org/article/10.1088/1742-6596/2246/1/012081/meta)                |
+| **AI Based Algorithm**           | Reinforcement Learning                  | [Ref](https://doi.org/10.1016/j.ast.2019.06.024)                                              |
+|                                    | Artificial Neural Network               | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10670550)                      |
+| **Mathematical Programming Methods** | Mixed Integer Programming              | [Ref](https://doi.org/10.2514/6.2004-6410)                                                   |
+| **Market Mechanism Based Method** | Auction Based Algorithm                 | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7813107)                       |
+|                                    | Consensus Based Bundle Algorithm        | [Ref](https://doi.org/10.3390/s20082307)                                                     |
+|                                    | Contract Net Protocol                   | [Ref](https://doi.org/10.3390/s22124486)                                                     |
+
+### UAV Swarm Communication architecture
+
+|                **Category**               |                      **References**                      |
+|:-----------------------------------------:|:--------------------------------------------------------:|
+|     infrastructure-based architectures    | [Ref](https://und.edu/research/rias/_files/docs/swarm_ieee.pdf) |
+| Flying Ad-hoc Network (FANET) Architectur | [Ref](https://doi.org/10.1016/j.adhoc.2012.12.004)              |
+
+### UAV Swarm Formation Control Algorithm
+
+|            **Category**            |                  **Example**                 |                                  **References**                                 |
+|:----------------------------------:|:--------------------------------------------:|:-------------------------------------------------------------------------------:|
+| **Centralized Control**   |               Virtual Structure              |     [Ref](https://ascelibrary.org/doi/abs/10.1061/(ASCE)AS.1943-5525.0000351)          |
+|                                    |           Leader-Follower Approaches         |     [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=680621)             |
+| **Decentralized Control** |     Decentralized Model Prediction Method    | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1429425)                |
+| **Distributed Control**   |                Behavior Method               |     [Ref](https://intapi.sciendo.com/pdf/10.1515/ama-2016-0015)                        |
+|                                    |               Consistency Method             | [Ref](https://doi.org/10.3390/drones7030185)                                           |
+
+## Summarization of LLMs, VLMs, and VFMs
 
 ### LLMs
 
@@ -182,84 +239,6 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                       | Depth Anything                        | [Yang et al.](https://depth-anything.github.io)                          |
 |                       | Depth Anything V2                     | [Yang et al.](https://depth-anything-v2.github.io/)                      |
 |                       | Depth Pro                             | [Apple](https://github.com/apple/ml-depth-pro)                           |
-
-## Advances in Foundation Models based UAV Systems
-### Visual Perception
-
-| Title              | Type         | Publication        | Code            |
-|--------------------|-------------|--------------------|-----------------|
-| Li et al. (A Benchmark for UAV-View Natural Language-Guided Tracking)       | VFM         | [ _MDPI_ ](https://www.mdpi.com/2079-9292/13/9/1706)      | [ _GitHub_ ](https://github.com/Lich-King000/UAVNLT)  |
-| Ma et al. (Applying Unsupervised Semantic Segmentation to High-Resolution UAV Imagery for Enhanced Road Scene Parsing)       | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2402.02985)      | - |
-| Limberg et al. (Leveraging YOLO-World and GPT-4V LMMs for Zero-Shot Person Detection and Action Recognition in Drone Imagery)  | VFM+VLM     | [ _Arxiv_ ](https://arxiv.org/abs/2404.01571)      | - |
-| Kim et al. (Weather-Aware Drone-View Object Detection Via Environmental Context Understanding)      | VLM+VFM     | [ _ICIP 2024_ ](https://ieeexplore.ieee.org/abstract/document/10647388?casa_token=5WOlhDhGgSMAAAAA:nwp96nnFaZE9U3t5XnZmLPYr9f3Lw1YUKx6w4qyKx5F6Gzwa9uwmMUsKc2IX6gdvomLZ7Dcf9l9u)      | - |
-| LGNet (Shooting condition insensitive unmanned aerial vehicle object detection)           | VFM         | [ _Expert Systems with Applications_ ](https://www.sciencedirect.com/science/article/pii/S0957417424000861?casa_token=3A-yp3URHJ4AAAAA:MHJXhYWUpX_mZMUggAo5oSa9FxpJsYdqbo940lZj-gfb5XuPOHAEdMQ1ZiyTEXir1kQUfjQMRA)      | - |
-| Sakaino et al. (Dynamic Texts From UAV Perspective Natural Images)  | VLM+VFM     | [ _ICCV 2023_ ](https://openaccess.thecvf.com/content/ICCV2023W/OpenSUN3D/html/Sakaino_Dynamic_Texts_From_UAV_Perspective_Natural_Images_ICCVW_2023_paper.html)      | -  |
-| COMRP (Unsupervised semantic segmentation of high-resolution UAV imagery for road scene parsing)           | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2402.02985)      | [ _GitHub_ ](https://github.com/CHDyshli/unsupervised-road-parsing)  |
-| CrossEarth (CrossEarth: Geospatial Vision Foundation Model for Domain Generalizable Remote Sensing Semantic Segmentation)      | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2410.22629)      | [ _GitHub_ ](https://github.com/Cuzyoung/CrossEarth)  |
-| TanDepth (TanDepth: Leveraging Global DEMs for Metric Monocular Depth Estimation in UAVs)        | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2409.05142)      | [ _GitHub_ ](https://github.com/hrflr/uavid-3d-scenes)  |
-| DroneGPT (DroneGPT: Zero-shot Video Question Answering For Drones)        | VLM+LLM+VFM | [ _CVDL 2024_ ](https://dl.acm.org/doi/abs/10.1145/3653804.3654608?casa_token=CtmHh5WiSTQAAAAA:3D70U8Z_CHJ1jrx9u4zduBfCi91JI3lFGVA3ZhCDQVOgEcSEaYuzGxKLWHX7fE6a3YviSkjat4mPug)      | - |
-| de Zarzà et al. (Socratic video understanding on unmanned aerial vehicles) | LLM         | [ _Procedia Computer Science_ ](https://www.sciencedirect.com/science/article/pii/S1877050923011560)      | - |
-| AeroAgent (Agent as Cerebrum, Controller as Cerebellum: Implementing an Embodied LMM-based Agent on Drones)       | VLM         | [ _Arxiv_ ](https://arxiv.org/abs/2311.15033)      | -  |
-| RS-LLaVA (Rs-llava: A large vision-language model for joint captioning and question answering in remote sensing imagery)        | VLM         | [ _MDPI_ ](https://www.mdpi.com/2072-4292/16/9/1477)      | -  |
-| GeoRSCLIP (RS5M and GeoRSCLIP: A large scale vision-language dataset and a large vision-language model for remote sensing)       | VFM         | [ _IEEE Transactions on Geoscience and Remote Sensing_ ](https://ieeexplore.ieee.org/abstract/document/10679571?casa_token=TyNG8Ytg_mIAAAAA:byAkV0_chtOVtdNjFaTmNA3EZIMH-cLQ38SP-CmAFrKcoPRyuNCx9DGqq54f1kOb32g7I3P5rHxRDw)      | [ _GitHub_ ](https://github.com/om-ai-lab/RS5M)  |
-| SkyEyeGPT (Skyeyegpt: Unifying remote sensing vision-language tasks via instruction tuning with large language model)       | VFM+LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2401.09712)      | [ _GitHub_ ](https://github.com/ZhanYang-nwpu/SkyEyeGPT)  |
-
-### Flight Control
-
-| Title             | Type | Publication       | Code           |
-|-------------------|-----:|-------------------|----------------|
-| PromptCraft (Chatgpt for robotics: Design principles and model abilities)    | LLM  | [ _IEEE Access_ ](https://ieeexplore.ieee.org/abstract/document/10500490)     | [ _GitHub_ ](https://github.com/microsoft/PromptCraft-Robotics) |
-| Zhong et al. (A safer vision-based autonomous planning system for quadrotor uavs with dynamic obstacle trajectory prediction and its application with llms)   | LLM  | [ _WACV 2024_ ](https://openaccess.thecvf.com/content/WACV2024W/LLVM-AD/html/Zhong_A_Safer_Vision-Based_Autonomous_Planning_System_for_Quadrotor_UAVs_With_WACVW_2024_paper.html)     | - |
-| Tazir et al. (From words to flight: Integrating openai chatgpt with px4/gazebo for natural language-based drone control)   | LLM  | [ _WCSE 2023_ ](https://www.researchgate.net/profile/Mohamed-Lamine-Tazir/publication/372028642_From_Words_to_Flight_Integrating_OpenAI_ChatGPT_with_PX4Gazebo_for_Natural_Language-Based_Drone_Control/links/64a2ef5295bbbe0c6e0dda04/From-Words-to-Flight-Integrating-OpenAI-ChatGPT-with-PX4-Gazebo-for-Natural-Language-Based-Drone-Control.pdf)     | - |
-| Phadke et al. (Integrating Large Language Models for UAV Control in Simulated Environments: A Modular Interaction Approach)  | LLM  | [ _Arxiv_ ](https://arxiv.org/abs/2410.17602)     | - |
-| EAI-SIM (EAI-SIM: An Open-Source Embodied AI Simulation Framework with Large Language Models)        | LLM  | [ _ICCA 2024_ ](https://ieeexplore.ieee.org/abstract/document/10591865?casa_token=Q8xpKHwtDaAAAAAA:d8MNPpg5Q86ZlC9NkMcbPOZ58K_ZewmAHOOjC8KTgHL6VODSyYUdhoQUcOHyUOLl6NH79L_fkcBxa6Y)     | [ _GitHub_ ](https://github.com/PengICS/eai_sim) |
-| TAIiST (TAIiST CPS-UAV at the SBFT Tool Competition 2024)         | LLM  | [ _SBFT 2024_ ](https://dl.acm.org/doi/abs/10.1145/3643659.3643936)     | [ _GitHub_ ](https://github.com/Trusted-AI-in-System-Test) |
-| Swarm-GPT (Swarm-gpt: Combining large language models with safe motion planning for robot choreography design)      | LLM  | [ _Arxiv_ ](https://www.dynsyslab.org/wp-content/papercite-data/pdf/jiao-neurips23.pdf)     | - |
-| FlockGPT (FlockGPT: Guiding UAV Flocking with Linguistic Orchestration)       | LLM  | [ _Arxiv_ ](https://arxiv.org/abs/2405.05872)     | - |
-| CLIPSwarm (CLIPSwarm: Generating Drone Shows from Text Prompts with Vision-Language Models)      | VFM  | [ _Arxiv_ ](https://arxiv.org/abs/2403.13467)     | - |
-
-### Planning
-
-| Title          | Type         | Publication       | Code           |
-|----------------|-------------:|-------------------|----------------|
-| TypeFly (Typefly: Flying drones with large language model)     | LLM          | [ _Arxiv_ ](https://arxiv.org/abs/2312.14950)     | - |
-| SPINE (SPINE: Online Semantic Planning for Missions with Incomplete Natural Language Specifications in Unstructured Environments)       | LLM+VFM+VLM  | [ _Arxiv_ ](https://arxiv.org/abs/2410.03035)     | - |
-| LEVIOSA (LEVIOSA: Natural Language-Based Uncrewed Aerial Vehicle Trajectory Generation)     | LLM          | [ _MDPI_ ](https://www.mdpi.com/2079-9292/13/22/4508)     | [ _GitHub_ ](https://github.com/sesem738/Leviosa) |
-| TPML (TPML: Task Planning for Multi-UAV System with Large Language Models)        | LLM          | [ _ICCA 2023_ ](https://ieeexplore.ieee.org/abstract/document/10591846?casa_token=xa1KFvlHFzUAAAAA:LBGOwvV_4iUcNLewToZCjFnr5aIUnReWyTvKyZsuY_nnGsk_eh8u1TW6MHpQ1NEF5pO-VPzAVovAuHA)     | - |
-| REAL (Real: Resilience and adaptation using large language models on autonomous aerial robots)        | LLM          | [ _Arxiv_ ](https://arxiv.org/abs/2311.01403)     | - |
-| Liu et al. (Multi-Agent Formation Control Using Large Language Models)  | LLM          | [ _Techrxiv_ ](https://www.techrxiv.org/doi/full/10.36227/techrxiv.172954477.70259514)     | - |
-
-### VLN
-
-| Title                | Type         | Publication       | Code           |
-|----------------------|-------------:|-------------------|----------------|
-| NaVid (Navid: Video-based vlm plans the next step for vision-and-language navigation)            | VFM+LLM       | [ _Arxiv_ ](https://arxiv.org/abs/2402.15852)     | - |
-| VLN-MP (Why Only Text: Empowering Vision-and-Language Navigation with Multi-modal Prompts)           | VFM           | [ _Arxiv_ ](https://arxiv.org/abs/2406.02208)     | [ _GitHub_ ](https://github.com/honghd16/VLN-MP) |
-| Gao et al. (Aerial Vision-and-Language Navigation via Semantic-Topo-Metric Representation Guided LLM Reasoning)       | VFM+LLM       | [ _Arxiv_ ](https://arxiv.org/abs/2410.08500)     | - |
-| MGP (CityNav: Language-Goal Aerial Navigation Dataset with Geographic Information)              | LLM+VFM       | [ _Arxiv_ ](https://arxiv.org/abs/2406.14240)     | [ _GitHub_ ](https://github.com/water-cookie/citynav) |
-| UAV Navigation LLM (Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology) | LLM+VFM     | [ _Arxiv_ ](https://arxiv.org/abs/2410.07087)     | [ _GitHub_ ](https://prince687028.github.io/OpenUAV/) |
-| GOMAA-Geo (GOMAA-Geo: GOal Modality Agnostic Active Geo-localization)        | LLM+VFM       | [ _Arxiv_ ](https://arxiv.org/abs/2406.01917)     | [ _GitHub_ ](https://github.com/mvrl/GOMAA-Geo/tree/main) |
-| NavAgent (NavAgent: Multi-scale Urban Street View Fusion For UAV Embodied Vision-and-Language Navigation)         | LLM+VFM+VLM   | [ _Arxiv_ ](https://arxiv.org/abs/2411.08579)     | - |
-| ASMA (ASMA: An Adaptive Safety Margin Algorithm for Vision-Language Drone Navigation via Scene-Aware Control Barrier Functions)             | LLM+VFM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.10283)     | - |
-| Zhang et al. (Demo Abstract: Embodied Aerial Agent for City-level Visual Language Navigation Using Large Language Model)     | VFM+LLM       | [ _IPSN 2024_ ](https://ieeexplore.ieee.org/abstract/document/10577302?casa_token=n2FU0mxrCvoAAAAA:E86JlA4m98x2f09d0VZ5199dx8gH-kxUfVA2LU7rjWd5s4alCDoQdHH67Vc5gbhnSI_W1tQNjdpHLA)     | - |
-| Chen et al. (Vision-Language Navigation for Quadcopters with Conditional Transformer and Prompt-based Text Rephraser)      | LLM           | [ _MMAsia 2023_ ](https://dl.acm.org/doi/abs/10.1145/3595916.3626450?casa_token=fGnueKEkiZsAAAAA:roEaZ3SHZ8UW9-i2vy_5pv_mwLlDVv4cL-MHxuGNQCKlOg9PuaX_vsUZ6WiRz4lOnJbCq-DxKycZGg)     | - |
-| CloudTrack (CloudTrack: Scalable UAV Tracking with Cloud Semantics)       | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.16111)     | - |
-| NEUSIS (NEUSIS: A Compositional Neuro-Symbolic Framework for Autonomous Perception, Reasoning, and Planning in Complex UAV Search Missions)           | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.10196)     | - |
-| Say-REAPEx (Say-REAPEx: An LLM-Modulo UAV Online Planning Framework for Search and Rescue)       | LLM           | [ _Openreview_ ](https://openreview.net/forum?id=9WdUqvE03f)     | - |
-
-### Infrastructures
-
-| Title             | Type    | Publication       | Code           |
-|-------------------|--------:|-------------------|----------------|
-| DTLLM-VLT (DTLLM-VLT: Diverse Text Generation for Visual Language Tracking Based on LLM)      | VFM+LLM | [ _CVPR 2024_ ](https://openaccess.thecvf.com/content/CVPR2024W/VDU/html/Li_DTLLM-VLT_Diverse_Text_Generation_for_Visual_Language_Tracking_Based_on_CVPRW_2024_paper.html)     | - |
-| Yao et al. (Can llm substitute human labeling? a case study of fine-grained chinese address entity recognition dataset for uav delivery)     | LLM     | [ _Companion Proceedings of the ACM Web Conference 2024_ ](https://dl.acm.org/doi/abs/10.1145/3589335.3651446?casa_token=mJzJVbxcOSUAAAAA:TUrPUIvFd7m7-LyBbn0UZ2-8ZuOgdUUGTHO3-TvQj1zrdd_HqIcz_Zbud7NuS8n6aVSKNM6pr3d3ue0)     | [ _GitHub_ ](https://github.com/zhhvvv/CNER-UAV) |
-| GPG2A (Cross-View Meets Diffusion: Aerial Image Synthesis with Geometry and Text Guidance)          | LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2408.04224)     | [ _GitLap_ ](https://gitlab.com/vail-uvm/GPG2A) |
-| AeroVerse (AeroVerse: UAV-Agent Benchmark Suite for Simulating, Pre-training, Finetuning, and Evaluating Aerospace Embodied World Models)      | VLM+LLM | [ _Arxiv_ ](https://arxiv.org/abs/2408.15511)     | - |
-| Tang et al. (Defining and Evaluating Physical Safety for Large Language Models)    | LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2411.02317)     | [ _Hugging face_ ](https://huggingface.co/datasets/TrustSafeAI/llm_physical_safety_benchmark) |
-| Xu et al. (Emergency Networking Using UAVs: A Reinforcement Learning Approach with Large Language Model)      | LLM     | [ _IPSN 2024_ ](https://ieeexplore.ieee.org/abstract/document/10577381?casa_token=Mmd9-ZDptTUAAAAA:q6shHGKcyH-748YODzx40WlYoLaswZcNK9Ik0z741pTnZX1inG9G0nQm5eBuaMnUl7T9eGgBdszs)     | - |
-| LLM-RS (Real-time Integration of Fine-tuned Large Language Model for Improved Decision-Making in Reinforcement Learning)         | LLM     | [ _IJCNN 2024_ ](https://ieeexplore.ieee.org/abstract/document/10650538?casa_token=nT06OMN91ZEAAAAA:rqTAbczP0wz615qxgPtIitMnscaFSUoA_Vs5hJ58uiVGXu4gNEqntpK9AfYfVXq89-JsZsIO_Vfh)     | - |
-| Pineli et al. (Evaluating Voice Command Pipelines for Drone Control: From STT and LLM to Direct Classification and Siamese Networks)  | LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2407.08658)     | - |
-
 
 ## General-domain Datasets for UAV
 
@@ -392,7 +371,6 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [WAID](https://github.com/xiaohuicui/WAID)                 | 2023     | Image                                  | 14,375 UAV images covering 6 species of wildlife and multiple environment types.                           |
 
-
 ### Drone Detection
 
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
@@ -411,63 +389,83 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [AerialVLN Simulator](https://github.com/AirVLN/AirVLN) | Aerialvln: Vision-and-language navigation for uavs |
 | [Embodied City](https://embodied-city.fiblab.net/) | EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment |
 
-## Preliminaries for UAVs
-### UAV Emboided Configurations
+## Summary of Methods and Models
 
-| **Category**           | **Characteristics**                                                                             | **Advantages**                                             | **Disadvantages**                                      |
-|------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
-| **Fixed-wing UAV**      | Fixed wings generate lift with forward motion.                                                  | High speed, long endurance, stable flight.                 | Cannot hover, high demands for takeoff/landing areas.   |
-| **Multirotor UAV**      | Multiple rotors provide lift and control.                                                      | Low cost, easy operation, capable of VTOL and hovering.    | Limited flight time, low speed, small payload capacity. |
-| **Unmanned Helicopter** | Single or dual rotors allow vertical take-off and hovering.                                    | High payload capacity, good wind resistance, long endurance, VTOL. | Complex structure, higher maintenance cost, slower than fixed-wing UAVs. |
-| **Hybrid UAV**          | Combines fixed-wing and multirotor capabilities.                                                | Flexible missions, long endurance, VTOL.                   | Complex mechanisms, higher cost.                       |
-| **Flapping-wing UAV**   | Uses clap-and-fling mechanism for flight.                                                      | Low noise, high propulsion efficiency, high maneuverability. | Complex analysis and control, limited payload capacity. |
-| **Unmanned Airship**    | Aerostat aircraft with gasbag for lift.                                                         | Low cost, low noise.                                      | Low speed, low maneuverability, highly affected by wind. |
-### UAV Swarm Path Planning Method
+### Visual Perception
 
-|               **Category**               |            **Examples**           | **References**                                                                 |
-|:----------------------------------------:|:--------------------------------:|:--------------------------------------------------------------------------------:|
-| **_Intelligent optimization algorithm_** |       Ant Colony Algorithm       | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5498477)        |
-|                                          |         Genetic Algorithm        | [Ref](https://www.worldscientific.com/doi/abs/10.1142/S0218213017600089)     |
-|                                          |   Simulated Annealing Algorithm  | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8483993)        |
-| **_Mathematical programming_**           | mixed integer linear programming | [Ref](https://journals.sagepub.com/doi/abs/10.1177/0954410015609361)          |
-|                                          |       nonlinear programming      | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2006-6199)                      |
-| **_AI based method_**                    |           Deep Learning          | [Ref](https://www.sciencedirect.com/science/article/abs/pii/S1270963820311172?via%3Dihub) |
-|                                          |      Reinforcement Learning      | [Ref](https://doi.org/10.1016/j.ast.2021.107052)                             |
+| Title              | Type         | Publication        | Code            |
+|--------------------|-------------|--------------------|-----------------|
+| Li et al. (A Benchmark for UAV-View Natural Language-Guided Tracking)       | VFM         | [ _MDPI_ ](https://www.mdpi.com/2079-9292/13/9/1706)      | [ _GitHub_ ](https://github.com/Lich-King000/UAVNLT)  |
+| Ma et al. (Applying Unsupervised Semantic Segmentation to High-Resolution UAV Imagery for Enhanced Road Scene Parsing)       | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2402.02985)      | - |
+| Limberg et al. (Leveraging YOLO-World and GPT-4V LMMs for Zero-Shot Person Detection and Action Recognition in Drone Imagery)  | VFM+VLM     | [ _Arxiv_ ](https://arxiv.org/abs/2404.01571)      | - |
+| Kim et al. (Weather-Aware Drone-View Object Detection Via Environmental Context Understanding)      | VLM+VFM     | [ _ICIP 2024_ ](https://ieeexplore.ieee.org/abstract/document/10647388?casa_token=5WOlhDhGgSMAAAAA:nwp96nnFaZE9U3t5XnZmLPYr9f3Lw1YUKx6w4qyKx5F6Gzwa9uwmMUsKc2IX6gdvomLZ7Dcf9l9u)      | - |
+| LGNet (Shooting condition insensitive unmanned aerial vehicle object detection)           | VFM         | [ _Expert Systems with Applications_ ](https://www.sciencedirect.com/science/article/pii/S0957417424000861?casa_token=3A-yp3URHJ4AAAAA:MHJXhYWUpX_mZMUggAo5oSa9FxpJsYdqbo940lZj-gfb5XuPOHAEdMQ1ZiyTEXir1kQUfjQMRA)      | - |
+| Sakaino et al. (Dynamic Texts From UAV Perspective Natural Images)  | VLM+VFM     | [ _ICCV 2023_ ](https://openaccess.thecvf.com/content/ICCV2023W/OpenSUN3D/html/Sakaino_Dynamic_Texts_From_UAV_Perspective_Natural_Images_ICCVW_2023_paper.html)      | -  |
+| COMRP (Unsupervised semantic segmentation of high-resolution UAV imagery for road scene parsing)           | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2402.02985)      | [ _GitHub_ ](https://github.com/CHDyshli/unsupervised-road-parsing)  |
+| CrossEarth (CrossEarth: Geospatial Vision Foundation Model for Domain Generalizable Remote Sensing Semantic Segmentation)      | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2410.22629)      | [ _GitHub_ ](https://github.com/Cuzyoung/CrossEarth)  |
+| TanDepth (TanDepth: Leveraging Global DEMs for Metric Monocular Depth Estimation in UAVs)        | VFM         | [ _Arxiv_ ](https://arxiv.org/abs/2409.05142)      | [ _GitHub_ ](https://github.com/hrflr/uavid-3d-scenes)  |
+| DroneGPT (DroneGPT: Zero-shot Video Question Answering For Drones)        | VLM+LLM+VFM | [ _CVDL 2024_ ](https://dl.acm.org/doi/abs/10.1145/3653804.3654608?casa_token=CtmHh5WiSTQAAAAA:3D70U8Z_CHJ1jrx9u4zduBfCi91JI3lFGVA3ZhCDQVOgEcSEaYuzGxKLWHX7fE6a3YviSkjat4mPug)      | - |
+| de Zarzà et al. (Socratic video understanding on unmanned aerial vehicles) | LLM         | [ _Procedia Computer Science_ ](https://www.sciencedirect.com/science/article/pii/S1877050923011560)      | - |
+| AeroAgent (Agent as Cerebrum, Controller as Cerebellum: Implementing an Embodied LMM-based Agent on Drones)       | VLM         | [ _Arxiv_ ](https://arxiv.org/abs/2311.15033)      | -  |
+| RS-LLaVA (Rs-llava: A large vision-language model for joint captioning and question answering in remote sensing imagery)        | VLM         | [ _MDPI_ ](https://www.mdpi.com/2072-4292/16/9/1477)      | -  |
+| GeoRSCLIP (RS5M and GeoRSCLIP: A large scale vision-language dataset and a large vision-language model for remote sensing)       | VFM         | [ _IEEE Transactions on Geoscience and Remote Sensing_ ](https://ieeexplore.ieee.org/abstract/document/10679571?casa_token=TyNG8Ytg_mIAAAAA:byAkV0_chtOVtdNjFaTmNA3EZIMH-cLQ38SP-CmAFrKcoPRyuNCx9DGqq54f1kOb32g7I3P5rHxRDw)      | [ _GitHub_ ](https://github.com/om-ai-lab/RS5M)  |
+| SkyEyeGPT (Skyeyegpt: Unifying remote sensing vision-language tasks via instruction tuning with large language model)       | VFM+LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2401.09712)      | [ _GitHub_ ](https://github.com/ZhanYang-nwpu/SkyEyeGPT)  |
 
+### VLN
 
-### UAV Swarm Task Allocation
+| Title                | Type         | Publication       | Code           |
+|----------------------|-------------:|-------------------|----------------|
+| NaVid (Navid: Video-based vlm plans the next step for vision-and-language navigation)            | VFM+LLM       | [ _Arxiv_ ](https://arxiv.org/abs/2402.15852)     | - |
+| VLN-MP (Why Only Text: Empowering Vision-and-Language Navigation with Multi-modal Prompts)           | VFM           | [ _Arxiv_ ](https://arxiv.org/abs/2406.02208)     | [ _GitHub_ ](https://github.com/honghd16/VLN-MP) |
+| Gao et al. (Aerial Vision-and-Language Navigation via Semantic-Topo-Metric Representation Guided LLM Reasoning)       | VFM+LLM       | [ _Arxiv_ ](https://arxiv.org/abs/2410.08500)     | - |
+| MGP (CityNav: Language-Goal Aerial Navigation Dataset with Geographic Information)              | LLM+VFM       | [ _Arxiv_ ](https://arxiv.org/abs/2406.14240)     | [ _GitHub_ ](https://github.com/water-cookie/citynav) |
+| UAV Navigation LLM (Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology) | LLM+VFM     | [ _Arxiv_ ](https://arxiv.org/abs/2410.07087)     | [ _GitHub_ ](https://prince687028.github.io/OpenUAV/) |
+| GOMAA-Geo (GOMAA-Geo: GOal Modality Agnostic Active Geo-localization)        | LLM+VFM       | [ _Arxiv_ ](https://arxiv.org/abs/2406.01917)     | [ _GitHub_ ](https://github.com/mvrl/GOMAA-Geo/tree/main) |
+| NavAgent (NavAgent: Multi-scale Urban Street View Fusion For UAV Embodied Vision-and-Language Navigation)         | LLM+VFM+VLM   | [ _Arxiv_ ](https://arxiv.org/abs/2411.08579)     | - |
+| ASMA (ASMA: An Adaptive Safety Margin Algorithm for Vision-Language Drone Navigation via Scene-Aware Control Barrier Functions)             | LLM+VFM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.10283)     | - |
+| Zhang et al. (Demo Abstract: Embodied Aerial Agent for City-level Visual Language Navigation Using Large Language Model)     | VFM+LLM       | [ _IPSN 2024_ ](https://ieeexplore.ieee.org/abstract/document/10577302?casa_token=n2FU0mxrCvoAAAAA:E86JlA4m98x2f09d0VZ5199dx8gH-kxUfVA2LU7rjWd5s4alCDoQdHH67Vc5gbhnSI_W1tQNjdpHLA)     | - |
+| Chen et al. (Vision-Language Navigation for Quadcopters with Conditional Transformer and Prompt-based Text Rephraser)      | LLM           | [ _MMAsia 2023_ ](https://dl.acm.org/doi/abs/10.1145/3595916.3626450?casa_token=fGnueKEkiZsAAAAA:roEaZ3SHZ8UW9-i2vy_5pv_mwLlDVv4cL-MHxuGNQCKlOg9PuaX_vsUZ6WiRz4lOnJbCq-DxKycZGg)     | - |
+| CloudTrack (CloudTrack: Scalable UAV Tracking with Cloud Semantics)       | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.16111)     | - |
+| NEUSIS (NEUSIS: A Compositional Neuro-Symbolic Framework for Autonomous Perception, Reasoning, and Planning in Complex UAV Search Missions)           | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.10196)     | - |
+| Say-REAPEx (Say-REAPEx: An LLM-Modulo UAV Online Planning Framework for Search and Rescue)       | LLM           | [ _Openreview_ ](https://openreview.net/forum?id=9WdUqvE03f)     | - |
 
-| **Category**                      | **Examples**                            | **References**                                                                                   |
-|:----------------------------------:|:---------------------------------------:|:------------------------------------------------------------------------------------------------:|
-| **_Heuristic Algorithm_**          | Particle Swarm Optimization Algorithm   | [Ref](https://arc.aiaa.org/doi/abs/10.2514/6.2008-6837)                                      |
-|                                    | Genetic Algorithm                       | [Ref](https://ieeexplore.ieee.org/abstract/document/9483937)                                  |
-|                                    | Simulated Annealing Algorithm           | [Ref](https://iopscience.iop.org/article/10.1088/1742-6596/2246/1/012081/meta)                |
-| **_AI Based Algorithm_**           | Reinforcement Learning                  | [Ref](https://doi.org/10.1016/j.ast.2019.06.024)                                              |
-|                                    | Artificial Neural Network               | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10670550)                      |
-| **_Mathematical Programming Methods_** | Mixed Integer Programming              | [Ref](https://doi.org/10.2514/6.2004-6410)                                                   |
-| **_Market Mechanism Based Method_** | Auction Based Algorithm                 | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7813107)                       |
-|                                    | Consensus Based Bundle Algorithm        | [Ref](https://doi.org/10.3390/s20082307)                                                     |
-|                                    | Contract Net Protocol                   | [Ref](https://doi.org/10.3390/s22124486)                                                     |
+### Planning
 
-### UAV Swarm Communication architecture
+| Title          | Type         | Publication       | Code           |
+|----------------|-------------:|-------------------|----------------|
+| TypeFly (Typefly: Flying drones with large language model)     | LLM          | [ _Arxiv_ ](https://arxiv.org/abs/2312.14950)     | - |
+| SPINE (SPINE: Online Semantic Planning for Missions with Incomplete Natural Language Specifications in Unstructured Environments)       | LLM+VFM+VLM  | [ _Arxiv_ ](https://arxiv.org/abs/2410.03035)     | - |
+| LEVIOSA (LEVIOSA: Natural Language-Based Uncrewed Aerial Vehicle Trajectory Generation)     | LLM          | [ _MDPI_ ](https://www.mdpi.com/2079-9292/13/22/4508)     | [ _GitHub_ ](https://github.com/sesem738/Leviosa) |
+| TPML (TPML: Task Planning for Multi-UAV System with Large Language Models)        | LLM          | [ _ICCA 2023_ ](https://ieeexplore.ieee.org/abstract/document/10591846?casa_token=xa1KFvlHFzUAAAAA:LBGOwvV_4iUcNLewToZCjFnr5aIUnReWyTvKyZsuY_nnGsk_eh8u1TW6MHpQ1NEF5pO-VPzAVovAuHA)     | - |
+| REAL (Real: Resilience and adaptation using large language models on autonomous aerial robots)        | LLM          | [ _Arxiv_ ](https://arxiv.org/abs/2311.01403)     | - |
+| Liu et al. (Multi-Agent Formation Control Using Large Language Models)  | LLM          | [ _Techrxiv_ ](https://www.techrxiv.org/doi/full/10.36227/techrxiv.172954477.70259514)     | - |
 
-|                **Category**               |                      **References**                      |
-|:-----------------------------------------:|:--------------------------------------------------------:|
-|     infrastructure-based architectures    | [Ref](https://und.edu/research/rias/_files/docs/swarm_ieee.pdf) |
-| Flying Ad-hoc Network (FANET) Architectur | [Ref](https://doi.org/10.1016/j.adhoc.2012.12.004)              |
+### Flight Control
 
-### UAV Swarm Formation Control Algorithm
+| Title             | Type | Publication       | Code           |
+|-------------------|-----:|-------------------|----------------|
+| PromptCraft (Chatgpt for robotics: Design principles and model abilities)    | LLM  | [ _IEEE Access_ ](https://ieeexplore.ieee.org/abstract/document/10500490)     | [ _GitHub_ ](https://github.com/microsoft/PromptCraft-Robotics) |
+| Zhong et al. (A safer vision-based autonomous planning system for quadrotor uavs with dynamic obstacle trajectory prediction and its application with llms)   | LLM  | [ _WACV 2024_ ](https://openaccess.thecvf.com/content/WACV2024W/LLVM-AD/html/Zhong_A_Safer_Vision-Based_Autonomous_Planning_System_for_Quadrotor_UAVs_With_WACVW_2024_paper.html)     | - |
+| Tazir et al. (From words to flight: Integrating openai chatgpt with px4/gazebo for natural language-based drone control)   | LLM  | [ _WCSE 2023_ ](https://www.researchgate.net/profile/Mohamed-Lamine-Tazir/publication/372028642_From_Words_to_Flight_Integrating_OpenAI_ChatGPT_with_PX4Gazebo_for_Natural_Language-Based_Drone_Control/links/64a2ef5295bbbe0c6e0dda04/From-Words-to-Flight-Integrating-OpenAI-ChatGPT-with-PX4-Gazebo-for-Natural-Language-Based-Drone-Control.pdf)     | - |
+| Phadke et al. (Integrating Large Language Models for UAV Control in Simulated Environments: A Modular Interaction Approach)  | LLM  | [ _Arxiv_ ](https://arxiv.org/abs/2410.17602)     | - |
+| EAI-SIM (EAI-SIM: An Open-Source Embodied AI Simulation Framework with Large Language Models)        | LLM  | [ _ICCA 2024_ ](https://ieeexplore.ieee.org/abstract/document/10591865?casa_token=Q8xpKHwtDaAAAAAA:d8MNPpg5Q86ZlC9NkMcbPOZ58K_ZewmAHOOjC8KTgHL6VODSyYUdhoQUcOHyUOLl6NH79L_fkcBxa6Y)     | [ _GitHub_ ](https://github.com/PengICS/eai_sim) |
+| TAIiST (TAIiST CPS-UAV at the SBFT Tool Competition 2024)         | LLM  | [ _SBFT 2024_ ](https://dl.acm.org/doi/abs/10.1145/3643659.3643936)     | [ _GitHub_ ](https://github.com/Trusted-AI-in-System-Test) |
+| Swarm-GPT (Swarm-gpt: Combining large language models with safe motion planning for robot choreography design)      | LLM  | [ _Arxiv_ ](https://www.dynsyslab.org/wp-content/papercite-data/pdf/jiao-neurips23.pdf)     | - |
+| FlockGPT (FlockGPT: Guiding UAV Flocking with Linguistic Orchestration)       | LLM  | [ _Arxiv_ ](https://arxiv.org/abs/2405.05872)     | - |
+| CLIPSwarm (CLIPSwarm: Generating Drone Shows from Text Prompts with Vision-Language Models)      | VFM  | [ _Arxiv_ ](https://arxiv.org/abs/2403.13467)     | - |
 
-|            **Category**            |                  **Example**                 |                                  **References**                                 |
-|:----------------------------------:|:--------------------------------------------:|:-------------------------------------------------------------------------------:|
-| **_    Centralized Control   _**   |               Virtual Structure              |     [Ref](https://ascelibrary.org/doi/abs/10.1061/(ASCE)AS.1943-5525.0000351)          |
-|                                    |           Leader-Follower Approaches         |     [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=680621)             |
-| **_    Decentralized Control   _** |     Decentralized Model Prediction Method    | [Ref](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1429425)                |
-| **_    Distributed Control   _**   |                Behavior Method               |     [Ref](https://intapi.sciendo.com/pdf/10.1515/ama-2016-0015)                        |
-|                                    |               Consistency Method             | [Ref](https://doi.org/10.3390/drones7030185)                                           |
+### Infrastructures
 
-
-
+| Title             | Type    | Publication       | Code           |
+|-------------------|--------:|-------------------|----------------|
+| DTLLM-VLT (DTLLM-VLT: Diverse Text Generation for Visual Language Tracking Based on LLM)      | VFM+LLM | [ _CVPR 2024_ ](https://openaccess.thecvf.com/content/CVPR2024W/VDU/html/Li_DTLLM-VLT_Diverse_Text_Generation_for_Visual_Language_Tracking_Based_on_CVPRW_2024_paper.html)     | - |
+| Yao et al. (Can llm substitute human labeling? a case study of fine-grained chinese address entity recognition dataset for uav delivery)     | LLM     | [ _Companion Proceedings of the ACM Web Conference 2024_ ](https://dl.acm.org/doi/abs/10.1145/3589335.3651446?casa_token=mJzJVbxcOSUAAAAA:TUrPUIvFd7m7-LyBbn0UZ2-8ZuOgdUUGTHO3-TvQj1zrdd_HqIcz_Zbud7NuS8n6aVSKNM6pr3d3ue0)     | [ _GitHub_ ](https://github.com/zhhvvv/CNER-UAV) |
+| GPG2A (Cross-View Meets Diffusion: Aerial Image Synthesis with Geometry and Text Guidance)          | LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2408.04224)     | [ _GitLap_ ](https://gitlab.com/vail-uvm/GPG2A) |
+| AeroVerse (AeroVerse: UAV-Agent Benchmark Suite for Simulating, Pre-training, Finetuning, and Evaluating Aerospace Embodied World Models)      | VLM+LLM | [ _Arxiv_ ](https://arxiv.org/abs/2408.15511)     | - |
+| Tang et al. (Defining and Evaluating Physical Safety for Large Language Models)    | LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2411.02317)     | [ _Hugging face_ ](https://huggingface.co/datasets/TrustSafeAI/llm_physical_safety_benchmark) |
+| Xu et al. (Emergency Networking Using UAVs: A Reinforcement Learning Approach with Large Language Model)      | LLM     | [ _IPSN 2024_ ](https://ieeexplore.ieee.org/abstract/document/10577381?casa_token=Mmd9-ZDptTUAAAAA:q6shHGKcyH-748YODzx40WlYoLaswZcNK9Ik0z741pTnZX1inG9G0nQm5eBuaMnUl7T9eGgBdszs)     | - |
+| LLM-RS (Real-time Integration of Fine-tuned Large Language Model for Improved Decision-Making in Reinforcement Learning)         | LLM     | [ _IJCNN 2024_ ](https://ieeexplore.ieee.org/abstract/document/10650538?casa_token=nT06OMN91ZEAAAAA:rqTAbczP0wz615qxgPtIitMnscaFSUoA_Vs5hJ58uiVGXu4gNEqntpK9AfYfVXq89-JsZsIO_Vfh)     | - |
+| Pineli et al. (Evaluating Voice Command Pipelines for Drone Control: From STT and LLM to Direct Classification and Siamese Networks)  | LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2407.08658)     | - |
 
 ## Contributors
 We want to thank the following contributors for creating, maintaining, and curating the tables in this repository:
@@ -494,26 +492,26 @@ If you have any questions about this repository, feel free to get in touch with 
 If you find this repository useful, please consider citing this paper:
 
 ```bibtex
-@misc{tian2024uavs_meet_llms,
-      title={UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility}, 
-      author={
-        Yonglin Tian and 
-        Fei Lin and 
-        Yiduo Li and 
-        Tengchao Zhang and 
-        Qiyao Zhang and 
-        Xuan Fu and 
-        Jun Huang and 
-        Xingyuan Dai and 
-        Yutong Wang and
-        Chunwei Tian and
-        Bai Li and
-        Yisheng Lv and
-        Levente Kovács and 
-        Fei-Yue Wang
-      },
-      year={2025},
-      note={Under review / In preparation},
+@misc{tian2025uavs_meet_llms,
+  title={UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility},
+  author={
+    Yonglin Tian and
+    Fei Lin and
+    Yiduo Li and
+    Tengchao Zhang and
+    Qiyao Zhang and
+    Xuan Fu and
+    Jun Huang and
+    Xingyuan Dai and
+    Yutong Wang and
+    Chunwei Tian and
+    Bai Li and
+    Yisheng Lv and
+    Levente Kovács and
+    Fei-Yue Wang
+  },
+  year={2025},
+  note={Under review / In preparation},
 }
 ```
  
