@@ -306,6 +306,9 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 | **Name**                                                   | **Year** | **Types**                             | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [TrafficNight](https://github.com/AIMSPolyU/TrafficNight)  | 2024     | Image, Infrared Image, Video, Infrared Video, Map| The dataset consists of 2,200 pairs of annotated thermal infrared and sRGB image data, and video data from 7 traffic scenes, with a total duration of approximately 240 minutes. Each scene includes a high-precision map, providing a detailed layout and topological information.
+
+ |
 | [VisDrone](http://aiskyeye.com/home/)                       | 2022     | Video, Image                          | 263 videos, 179,264 frames. 10,209 still images. More than 2,500,000 object instance annotations. The data covers 14 different cities, covering a wide range of weather and light conditions. |
 | [ITCVD](https://research.utwente.nl/en/datasets/itcvd-dataset) | 2020     | Image                                 | A total of 173 aerial images were collected, including 135 in the training set with 23,543 vehicles and 38 in the test set with 5,545 vehicles. There is 60% regional overlap between the images, and there is no overlap between the training set and the test set. |
 | [UAVid](https://uavid.nl/)                                  | 2020     | Image, Video                          | 30 videos, 300 images, 8 semantic category annotations.                                                     |
@@ -316,6 +319,9 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [UAVDT](https://sites.google.com/view/grli-uavdt/)           | 2018     | Video, Weather, Altitude, Camera angle | 100 videos, about 80,000 frames, 30 frames per second, containing 841,500 target boxes, covering 2,700 targets. |
 | [CADP](https://ankitshah009.github.io/accident_forecasting_traffic_camera) | 2016     | Video                                 | A total of 5.24 hours, 1,416 traffic accident clips, 205 full-time and space annotation videos. |
 | [VEDAI](https://downloads.greyc.fr/vedai)                   | 2016     | Image                                 | 1,210 images (1024 × 1024 and 512 × 512 pixels), 9 types of vehicles, containing about 6,650 targets in total. |
+
+
+
 
 
 ### Remote Sensing
