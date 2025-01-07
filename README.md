@@ -45,6 +45,7 @@ If you find it useful, please star ⭐ this repo and [cite](#citation) the paper
 ---
 
 ## 🔥 News
+- **[2025-01-07]** 📃 Check out our new paper: [*UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility*](https://arxiv.org/pdf/2501.02341).
 - **[2024-12-28]** This repository is newly launched to explore the synergy between **Unmanned Aerial Vehicles (UAVs)** and **Large Language Models (LLMs)**. We will continually update it with fresh papers, demos, and insights.
 - **[2024-12-27]** [Yiduo Li](https://github.com/Leeeufo02) added the content of the dataset section
 - **[2024-12-27]** [Fei Lin](https://github.com/linfei-mise) and [Yonglin Tian](https://github.com/Hub-Tian) curated this list and published the first version.
@@ -498,26 +499,14 @@ If you have any questions about this repository, feel free to get in touch with 
 If you find this repository useful, please consider citing this paper:
 
 ```bibtex
-@misc{tian2025uavs_meet_llms,
-  title={UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility},
-  author={
-    Yonglin Tian and
-    Fei Lin and
-    Yiduo Li and
-    Tengchao Zhang and
-    Qiyao Zhang and
-    Xuan Fu and
-    Jun Huang and
-    Xingyuan Dai and
-    Yutong Wang and
-    Chunwei Tian and
-    Bai Li and
-    Yisheng Lv and
-    Levente Kovács and
-    Fei-Yue Wang
-  },
-  year={2025},
-  note={Under review / In preparation},
+@misc{tian2025uavsmeetllmsoverviews,
+      title={UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility}, 
+      author={Yonglin Tian and Fei Lin and Yiduo Li and Tengchao Zhang and Qiyao Zhang and Xuan Fu and Jun Huang and Xingyuan Dai and Yutong Wang and Chunwei Tian and Bai Li and Yisheng Lv and Levente Kovács and Fei-Yue Wang},
+      year={2025},
+      eprint={2501.02341},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2501.02341}, 
 }
 ```
  
