@@ -387,7 +387,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 ## Open Platforms for UAVs
 
-| **Name**                                                   | **Paper**                                                        |
+| **Name**                                                   | **Publication**                                                        |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | [AirSim](https://microsoft.github.io/AirSim/) | Airsim: High-fidelity visual and physical simulation for autonomous vehicles |
 | [Carla](https://carla.org/) | CARLA: An open urban driving simulator |
