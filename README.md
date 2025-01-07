@@ -361,8 +361,8 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 | **Name**                                                   | **Year** | **Types**                              | **Amount**                                                                                                 |
 |------------------------------------------------------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [FloodNet](https://github.com/BinaLab/FloodNet-Supervised_v1.0) | 2021     | Image, Text                            | The whole dataset has 2,343 images, divided into training (~60%), validation (~20%), and test (~20\%) sets. The semantic segmentation labels include: Background, Building Flooded, Building Non-Flooded, Road Flooded, Road Non-Flooded, Water, Tree, Vehicle, Pool, Grass. |
 | [AFID](https://purr.purdue.edu/publications/4105/1)         | 2023     | Image                                  | A total of 816 images with resolutions of 2720 × 1536 and 2560 × 1440. Contains 8 semantic segmentation categories. |
+| [FloodNet](https://github.com/BinaLab/FloodNet-Supervised_v1.0) | 2021     | Image, Text                            | The whole dataset has 2,343 images, divided into training (~60%), validation (~20%), and test (~20\%) sets. The semantic segmentation labels include: Background, Building Flooded, Building Non-Flooded, Road Flooded, Road Non-Flooded, Water, Tree, Vehicle, Pool, Grass. |
 | [Aerial SAR](https://www.leadingindia.ai/data-set)          | 2020     | Image                                  | 2,000 images with 30,000 action instances covering multiple human behaviors.                               |
 
 ### Military
