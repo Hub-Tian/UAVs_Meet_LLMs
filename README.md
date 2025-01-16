@@ -99,7 +99,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 - [Open Platforms for UAVs](#open-platforms-for-uavs)
 
-- [Summary of Methods and Models](#summary-of-methods-and-models)
+- [Advances of FM-based UAV Systems in Various Tasks](#advances-of-fm-based-uav-systems-in-various-tasks)
   - [Visual Perception](#visual-perception)
   - [VLN](#vln)
   - [Planning](#planning)
@@ -396,7 +396,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | [AerialVLN Simulator](https://github.com/AirVLN/AirVLN) | Aerialvln: Vision-and-language navigation for uavs |
 | [Embodied City](https://embodied-city.fiblab.net/) | EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment |
 
-## Summary of Methods and Models
+## Advances of FM-based UAV Systems in Various Tasks
 
 ### Visual Perception
 
