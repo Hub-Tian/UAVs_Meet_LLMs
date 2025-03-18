@@ -422,6 +422,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 
 | Title                | Type         | Publication       | Code           |
 |----------------------|-------------:|-------------------|----------------|
+| Neuro-LIFT (Neuro-LIFT: A Neuromorphic, LLM-based Interactive Framework for Autonomous Drone FlighT at the Edge)            | LLM       | [ _Arxiv_ ](https://arxiv.org/abs/2501.19259v1)     | - |
 | NaVid (Navid: Video-based vlm plans the next step for vision-and-language navigation)            | VFM+LLM       | [ _Arxiv_ ](https://arxiv.org/abs/2402.15852)     | - |
 | VLN-MP (Why Only Text: Empowering Vision-and-Language Navigation with Multi-modal Prompts)           | VFM           | [ _Arxiv_ ](https://arxiv.org/abs/2406.02208)     | [ _GitHub_ ](https://github.com/honghd16/VLN-MP) |
 | Gao et al. (Aerial Vision-and-Language Navigation via Semantic-Topo-Metric Representation Guided LLM Reasoning)       | VFM+LLM       | [ _Arxiv_ ](https://arxiv.org/abs/2410.08500)     | - |
@@ -435,6 +436,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | CloudTrack (CloudTrack: Scalable UAV Tracking with Cloud Semantics)       | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.16111)     | - |
 | NEUSIS (NEUSIS: A Compositional Neuro-Symbolic Framework for Autonomous Perception, Reasoning, and Planning in Complex UAV Search Missions)           | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.10196)     | - |
 | Say-REAPEx (Say-REAPEx: An LLM-Modulo UAV Online Planning Framework for Search and Rescue)       | LLM           | [ _Openreview_ ](https://openreview.net/forum?id=9WdUqvE03f)     | - |
+| OpenFLY (OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation)       | LLM           | [ _Openreview_ ](https://arxiv.org/abs/2502.18041v3)     | - |
 
 ### Planning
 
@@ -446,6 +448,9 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | TPML (TPML: Task Planning for Multi-UAV System with Large Language Models)        | LLM          | [ _ICCA 2023_ ](https://ieeexplore.ieee.org/abstract/document/10591846?casa_token=xa1KFvlHFzUAAAAA:LBGOwvV_4iUcNLewToZCjFnr5aIUnReWyTvKyZsuY_nnGsk_eh8u1TW6MHpQ1NEF5pO-VPzAVovAuHA)     | - |
 | REAL (Real: Resilience and adaptation using large language models on autonomous aerial robots)        | LLM          | [ _Arxiv_ ](https://arxiv.org/abs/2311.01403)     | - |
 | Liu et al. (Multi-Agent Formation Control Using Large Language Models)  | LLM          | [ _Techrxiv_ ](https://www.techrxiv.org/doi/full/10.36227/techrxiv.172954477.70259514)     | - |
+| AutoHMA-LLM (AutoHMA-LLM: Efficient Task Coordination and Execution in Heterogeneous Multi-Agent Systems Using Hybrid Large Language Models)  | LLM          | [ _IEEE_ ](https://ieeexplore.ieee.org/abstract/document/10839354)     | - |
+| ACMA (Agent in the Sky: Intelligent Multi-Agent Framework for Autonomous HAPS Coordination and Real-World Event Adaptation)  | LLM          | [ _AAAI_ ](https://openreview.net/forum?id=MHbz86z3h5)     | - |
+| UAV-VLA (UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation)  | LLM+VLM          | [ _Arxiv_ ](https://arxiv.org/abs/2501.05014)     | - |
 
 ### Flight Control
 
