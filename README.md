@@ -435,7 +435,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | CloudTrack (CloudTrack: Scalable UAV Tracking with Cloud Semantics)       | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.16111)     | - |
 | NEUSIS (NEUSIS: A Compositional Neuro-Symbolic Framework for Autonomous Perception, Reasoning, and Planning in Complex UAV Search Missions)           | VFM+VLM       | [ _Arxiv_ ](https://arxiv.org/abs/2409.10196)     | - |
 | Say-REAPEx (Say-REAPEx: An LLM-Modulo UAV Online Planning Framework for Search and Rescue)       | LLM           | [ _Openreview_ ](https://openreview.net/forum?id=9WdUqvE03f)     | - |
-| OpenFLY (OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation)       | LLM           | [ _Arxiv_ ](https://arxiv.org/abs/2502.18041v3)     |  [ _GitHub_ ](https://shailab-ipec.github.io/openfly/) |
+| OpenFLY (OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation)       | LLM+VLM           | [ _Arxiv_ ](https://arxiv.org/abs/2502.18041v3)     |  [ _GitHub_ ](https://shailab-ipec.github.io/openfly/) |
 
 ### Planning
 
