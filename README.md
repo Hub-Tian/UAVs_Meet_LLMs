@@ -45,7 +45,8 @@ If you find it useful, please star ⭐ this repo and [cite](#citation) the paper
 ---
 
 ## 🔥 News
-- **[2025-01-07]** 📃 Check out our new paper: [*UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility*](https://arxiv.org/pdf/2501.02341).
+- **[2025-03-25]** 🎉 Our paper *"UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility"* has been **accepted by _Information Fusion_**! Stay tuned for the camera-ready version.
+- **[2025-01-07]** 📃 Check out our new paper: [*UAVs Meet LLMs: Overviews and Perspectives Toward Agentic Low-Altitude Mobility*](https://arxiv.org/abs/2501.02341).
 - **[2024-12-28]** This repository is newly launched to explore the synergy between **Unmanned Aerial Vehicles (UAVs)** and **Large Language Models (LLMs)**. We will continually update it with fresh papers, demos, and insights.
 - **[2024-12-27]** [Fei Lin](https://github.com/linfei-mise) and [Yonglin Tian](https://github.com/Hub-Tian) curated this list and published the first version.
 
@@ -146,7 +147,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                                    | Consensus Based Bundle Algorithm        | [Ref](https://doi.org/10.3390/s20082307)                                                     |
 |                                    | Contract Net Protocol                   | [Ref](https://doi.org/10.3390/s22124486)                                                     |
 
-### UAV Swarm Communication architecture
+### UAV Swarm Communication Architecture
 
 |                **Category**               |                      **References**                      |
 |:-----------------------------------------:|:--------------------------------------------------------:|
@@ -172,13 +173,13 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | **General**     | GPT-3, GPT-3.5, GPT-4                     | [OpenAI](https://openai.com)                                     |
 |                | Claude 2, Claude 3                         | [Anthropic](https://www.anthropic.com)                           |
 |                | Mistral series                             | [Mistral AI](https://www.mistral.ai)                             |
-|                | PaLM series, Gemini series                 | [Google Research](https://ai.google)                             |
-|                | LLaMA, LLaMA2, LLaMA3                      | [Meta AI](https://ai.meta.com)                                   |
+|                | PaLM series, Gemini series                 | [Google Research](https://research.google)                       |
+|                | LLaMA, LLaMA2, LLaMA3                      | [Meta AI](https://www.llama.com)                                 |
 |                | Vicuna                                     | [Vicuna Team](https://vicuna.lmsys.org)                          |
 |                | Qwen series                                | [Qwen Team, Alibaba Group](https://github.com/QwenLM)            |
 |                | InternLM                                   | [Shanghai AI Laboratory](https://github.com/InternLM/InternLM)   |
 |                | BuboGPT                                    | [Bytedance](https://github.com/magic-research/bubogpt)           |
-|                | ChatGLM                                    | [Zhipu AI](https://github.com/THUDM)                             |
+|                | ChatGLM                                    | [THUKEG & THUDM](https://github.com/THUDM)                       |
 |                | DeepSeek series                            | [DeepSeek](https://github.com/deepseek-ai)                       |
 
 ### VLMs
@@ -191,7 +192,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                       | LLaVA, LLaVA-1.5, LLaVA-NeXT                             | [Liu et al.](https://github.com/haotian-liu/LLaVA)                                         |
 |                       | MoE-LLaVA                                               | [Lin et al.](https://github.com/PKU-YuanGroup/MoE-LLaVA)                                   |
 |                       | LLaVA-CoT                                               | [Xu et al.](https://github.com/PKU-YuanGroup/LLaVA-CoT)                                    |
-|                       | Flamingo                                               | [Alayrac et al.](https://github.com/mlfoundations/open_flamingo)                           |
+|                       | Flamingo                                               | [Alayrac et al.](https://github.com/mlfoundations/open_flamingo)                            |
 |                       | BLIP                                                   | [Li et al.](https://github.com/salesforce/BLIP)                                            |
 |                       | BLIP-2                                                 | [Li et al.](https://github.com/salesforce/LAVIS/tree/main/projects/blip2)                  |
 |                       | InstructBLIP                                           | [Dai et al.](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip)          |
@@ -215,10 +216,10 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | **Object Detection**  | GLIP                                  | [Microsoft Research](https://github.com/microsoft/GLIP)                 |
 |                       | DINO                                  | [Zhang et al.](https://github.com/IDEA-Research/DINO)                   |
 |                       | Grounding-DINO                        | [Liu et al.](https://github.com/IDEA-Research/GroundingDINO)            |
-|                       | DINOv2                                | [Meta AI Research](https://github.com/facebookresearch/dinov2)          |
+|                       | DINOv2                                | [Meta AI Research, FAIR}](https://github.com/facebookresearch/dinov2)   |
 |                       | AM-RADIO                              | [NVIDIA](https://github.com/NVlabs/RADIO)                               |
 |                       | DINO-WM                               | [Zhou et al.](https://dino-wm.github.io/)                               |
-|                       | YOLO-World                            | [Cheng et al.](https://github.com/AILabCVC/YOLO-World)                  |
+|                       | YOLO-World                            | [Cheng et al.](https://github.com/AILab-CVC/YOLO-World)                  |
 | **Image Segmentation** | CLIPSeg                               | [Lüdecke and Ecker](https://github.com/timojl/clipseg)                   |
 |                       | SAM                                   | [Meta AI Research, FAIR](https://segment-anything.com)                   |
 |                       | Embodied-SAM                          | [Xu et al.](https://github.com/xuxw98/ESAM)                              |
@@ -229,11 +230,11 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 |                       | MobileSAM                             | [Zhang et al.](https://github.com/ChaoningZhang/MobileSAM)              |
 |                       | SAM 2                                 | [Meta AI Research, FAIR](https://ai.meta.com/sam2/)                      |
 |                       | SAMURAI                               | [University of Washington](https://github.com/yangchris11/samurai)       |
-|                       | SegGPT                                | [Wang et al.](https://github.com/baaivision/Painter)                     |
+|                       | SegGPT                                | [Wang et al.](https://github.com/baaivision/Painter/tree/main/SegGPT)    |
 |                       | Osprey                                | [Yuan et al.](https://github.com/CircleRadon/Osprey)                     |
 |                       | SEEM                                  | [Zou et al.](https://github.com/UX-Decoder/Segment-Everything-Everywhere-All-At-Once)   |
 |                       | Seal                                  | [Liu et al.](https://github.com/youquanl/Segment-Any-Point-Cloud)        |
-|                       | LISA                                  | [Lai et al.](https://github.com/dvlabresearch/LISA)                      |
+|                       | LISA                                  | [Lai et al.](https://github.com/dvlab-research/LISA)                     |
 | **Depth Estimation**  | ZoeDepth                              | [Bhat et al.](https://github.com/isl-org/ZoeDepth)                       |
 |                       | ScaleDepth                            | [Zhu et al.](https://ruijiezhu94.github.io/ScaleDepth/)                  |
 |                       | Depth Anything                        | [Yang et al.](https://depth-anything.github.io)                          |
@@ -416,7 +417,7 @@ Here, we primarily store various **tables** referenced in the survey/overview pa
 | RS-LLaVA (Rs-llava: A large vision-language model for joint captioning and question answering in remote sensing imagery)        | VLM         | [ _MDPI_ ](https://www.mdpi.com/2072-4292/16/9/1477)      | -  |
 | GeoRSCLIP (RS5M and GeoRSCLIP: A large scale vision-language dataset and a large vision-language model for remote sensing)       | VFM         | [ _IEEE Transactions on Geoscience and Remote Sensing_ ](https://ieeexplore.ieee.org/abstract/document/10679571?casa_token=TyNG8Ytg_mIAAAAA:byAkV0_chtOVtdNjFaTmNA3EZIMH-cLQ38SP-CmAFrKcoPRyuNCx9DGqq54f1kOb32g7I3P5rHxRDw)      | [ _GitHub_ ](https://github.com/om-ai-lab/RS5M)  |
 | SkyEyeGPT (Skyeyegpt: Unifying remote sensing vision-language tasks via instruction tuning with large language model)       | VFM+LLM     | [ _Arxiv_ ](https://arxiv.org/abs/2401.09712)      | [ _GitHub_ ](https://github.com/ZhanYang-nwpu/SkyEyeGPT)  |
-
+| AirVista (AirVista: Empowering UAVs with 3D Spatial Reasoning Abilities Through a Multimodal Large Language Model Agent)       | VFM+VLM    | [ _ITSC2024_ ](https://doi.org/10.1109/ITSC58415.2024.10919532)      | -  |
 ### VLN
 
 | Title                | Type         | Publication       | Code           |
